@@ -1,0 +1,4 @@
+git add .  -----> Prepara los cambios del directorio completo
+git commit -m "(mensaje)" -----> Confirma los cambios a subir con la descripcion (mensaje)
+gut fetch/pull ------> actualiza los cambios del repositorio
+git push ------> sube los cambios a github
