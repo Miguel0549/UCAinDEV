@@ -5,8 +5,8 @@ public class Camera : MonoBehaviour
 {
     private float smoothTime = 0.5f;
     private Vector3 velocity = Vector3.zero;
-    private float xFollowRange = 8.0f;
-    private float yFollowRange = 1.5f;
+    private float xFollowRange = 7f;
+    private float yFollowRange = 1f;
     [SerializeField] private Transform target;
     void Update()
     {
