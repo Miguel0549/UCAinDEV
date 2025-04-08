@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float Speed=8.0f;
+    public float Speed=7.5f;
     public float WalkSpeedMultiplier=0.5f;
     public Rigidbody2D rbody2d;
     private bool Dodging= false;
     public float DodgeCooldown = 1.5f;
     private float LastDodge = 0f;
     public float DodgeDuration = 0.3f;
-    public float DodgeSpeed = 12.0f;
+    public float DodgeSpeed = 10f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,12 +37,11 @@ public class Player : MonoBehaviour
                 Dodging = false;
                 rbody2d.linearVelocity = Vector2.zero;
             }
-            if (Input.GetKey(KeyCode.Space)&&Time.fixedTime-LastDodge>DodgeCooldown)
+            if (Input.GetKey(KeyCode.Space)&&Time.fixedTime-LastDodge>DodgeCooldown && ( xMovement != 0 || yMovement != 0 ))
             {
                 Dodging=true;
                 LastDodge=Time.fixedTime;
-                rbody2d.linearVelocity = new Vector2(DodgeSpeed * xMovement,DodgeSpeed * yMovement);
-                Debug.Log("ROlling");
+                rbody2d.linearVelocity = new Vector2(DodgeSpeed * xMovement, DodgeSpeed * yMovement);
             }
         
     }

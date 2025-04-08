@@ -6449,6 +6449,9 @@ MonoBehaviour:
   Speed: 6.7
   WalkSpeedMultiplier: 0.5
   rbody2d: {fileID: 2097084752}
+  DodgeCooldown: 1.5
+  DodgeDuration: 0.3
+  DodgeSpeed: 12
 --- !u!212 &2097084754
 SpriteRenderer:
   m_ObjectHideFlags: 0
