@@ -2,20 +2,16 @@ using System;
 using NUnit.Framework.Interfaces;
 using UnityEngine;
 
-public class PlayerScript : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public float Speed=7.5f;
+    public float Speed=8.0f;
     public float WalkSpeedMultiplier=0.5f;
     public Rigidbody2D rbody2d;
     private bool Dodging= false;
     public float DodgeCooldown = 1.5f;
     private float LastDodge = 0f;
     public float DodgeDuration = 0.3f;
-    public float DodgeSpeed = 10f;
-    public float FireRate = 1f;
-    public Rigidbody2D Projectile;
-    private float LastFire = 0f;
-    
+    public float DodgeSpeed = 12.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,23 +31,18 @@ public class PlayerScript : MonoBehaviour
         if (!Dodging)
         { 
             rbody2d.linearVelocity = new Vector2(Speed * xMovement,Speed * yMovement);
-            if (Time.fixedTime-LastFire>FireRate)
-            {
-                LastFire=Time.fixedTime;
-                Rigidbody2D p = Instantiate(Projectile,transform.position,transform.rotation);
-                p.linearVelocity = rbody2d.linearVelocity * 0.1f + new Vector2(1,0);
-            }
         }
             if (Dodging&&Time.fixedTime-LastDodge>DodgeDuration)
             {
                 Dodging = false;
                 rbody2d.linearVelocity = Vector2.zero;
             }
-            if (Input.GetKey(KeyCode.Space)&&Time.fixedTime-LastDodge>DodgeCooldown && ( xMovement != 0 || yMovement != 0 ))
+            if (Input.GetKey(KeyCode.Space)&&Time.fixedTime-LastDodge>DodgeCooldown)
             {
                 Dodging=true;
                 LastDodge=Time.fixedTime;
-                rbody2d.linearVelocity = new Vector2(DodgeSpeed * xMovement, DodgeSpeed * yMovement);
+                rbody2d.linearVelocity = new Vector2(DodgeSpeed * xMovement,DodgeSpeed * yMovement);
+
             }
         
     }
