@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 18d2160389f731ebda69098b9f7b393e
+guid: 77faedf1f505d034a9f9805c8034f46e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1063761538628875396
-    second: suelo1_0
+      213: -6579315544772429313
+    second: suelo1 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: suelo1_0
+      name: suelo1 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7b8d444482cc31f0800000000000000
-      internalID: -1063761538628875396
+      spriteID: ff932a8ee5391b4a0800000000000000
+      internalID: -6579315544772429313
       vertices: []
       indices: 
       edges: []
@@ -134,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      suelo1 1_0: -6579315544772429313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

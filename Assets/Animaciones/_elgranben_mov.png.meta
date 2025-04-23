@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 6748f1afe57466c46a68beda25d1c120
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8666607350362981587
+    second: _elgranben_mov_0
+  - first:
+      213: 3712122228006486641
+    second: _elgranben_mov_1
+  - first:
+      213: -8602451194663194407
+    second: _elgranben_mov_2
+  - first:
+      213: -3949601825676549334
+    second: _elgranben_mov_3
+  - first:
+      213: 4113322420082243913
+    second: _elgranben_mov_4
+  - first:
+      213: 5142067782583076181
+    second: _elgranben_mov_5
+  - first:
+      213: -3983173208393468528
+    second: _elgranben_mov_6
+  - first:
+      213: 3726342561259190407
+    second: _elgranben_mov_7
+  - first:
+      213: 7718769746530699866
+    second: _elgranben_mov_8
+  - first:
+      213: 7113354413580581581
+    second: _elgranben_mov_9
+  - first:
+      213: 3932340476477223084
+    second: _elgranben_mov_10
+  - first:
+      213: 6920210155790681748
+    second: _elgranben_mov_11
+  - first:
+      213: -6627537145862689327
+    second: _elgranben_mov_12
+  - first:
+      213: -7850919969101012750
+    second: _elgranben_mov_13
+  - first:
+      213: 4432915177759753048
+    second: _elgranben_mov_14
+  - first:
+      213: 3802494803434775620
+    second: _elgranben_mov_15
+  - first:
+      213: -8042623409326390302
+    second: _elgranben_mov_16
+  - first:
+      213: 5252686284996889810
+    second: _elgranben_mov_17
+  - first:
+      213: 6154310710226820359
+    second: _elgranben_mov_18
+  - first:
+      213: -7778829069713210143
+    second: _elgranben_mov_19
+  - first:
+      213: -7459218240450493474
+    second: _elgranben_mov_20
+  - first:
+      213: -108566827239901049
+    second: _elgranben_mov_21
+  - first:
+      213: -6467393851605656705
+    second: _elgranben_mov_22
+  - first:
+      213: -3546382507242264412
+    second: _elgranben_mov_23
+  - first:
+      213: 1802589758964713282
+    second: _elgranben_mov_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frente_idle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 953
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4cc2ea779f54870800000000000000
+      internalID: 8666607350362981587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diagonal1_idle
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 953
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172882baf7b148330800000000000000
+      internalID: 3712122228006486641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lateral_idle
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 953
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d037785734fd9880800000000000000
+      internalID: -8602451194663194407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diagonal2_idle
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 953
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23a050c0123039c0800000000000000
+      internalID: -3949601825676549334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espalda_idle
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 953
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949f6af92f4751930800000000000000
+      internalID: 4113322420082243913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frente_andando1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 715
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55548d7876b4c5740800000000000000
+      internalID: 5142067782583076181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diagonal1_andando1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 715
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095bada121de8b8c0800000000000000
+      internalID: -3983173208393468528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lateral_andando1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 715
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788f54301d0a6b330800000000000000
+      internalID: 3726342561259190407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diagonal2_andando1
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 715
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a8efc40349e1b60800000000000000
+      internalID: 7718769746530699866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espalda_andando1
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 715
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca7de6a626b7b260800000000000000
+      internalID: 7113354413580581581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frente_andando2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 477
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0b05434da729630800000000000000
+      internalID: 3932340476477223084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diagonal1_andando2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 477
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49644fac876890060800000000000000
+      internalID: 6920210155790681748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lateral_andando2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 477
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dde52d74124604a0800000000000000
+      internalID: -6627537145862689327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diagonal2_andando2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 477
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0a6b152edeb0390800000000000000
+      internalID: -7850919969101012750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espalda_andando2
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 477
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853cec91ed0e48d30800000000000000
+      internalID: 4432915177759753048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frente_andando3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444aff290ec25c430800000000000000
+      internalID: 3802494803434775620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diagonal1_andando3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 244
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e30cd0fe9cd26090800000000000000
+      internalID: -8042623409326390302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lateral_andando3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 244
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc4ec5a85a45e840800000000000000
+      internalID: 5252686284996889810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diagonal2_andando3
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 244
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d9378ebf0886550800000000000000
+      internalID: 6154310710226820359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espalda_andando3
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 244
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e40343dc2c0c0490800000000000000
+      internalID: -7778829069713210143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frente_andando4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a12c946949d8e4eae9cb627215af3d
+      internalID: -7459218240450493474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diagonal1_andando4
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 10
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd339c68814f7c4d81dfe4c3ce55e24
+      internalID: -108566827239901049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lateral_andando4
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 10
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a961c045f48f4bf4da07db3c7c0e7466
+      internalID: -6467393851605656705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diagonal2_andando4
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 10
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88ed32f7e70ba643bdd686b518efe7e
+      internalID: -3546382507242264412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espalda_andando4
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 10
+        width: 157
+        height: 237
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df200842ec7b82419f78e8c833bd240
+      internalID: 1802589758964713282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 13438babe3043774a94584066ada0128
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      diagonal1_andando1: -3983173208393468528
+      diagonal1_andando2: 6920210155790681748
+      diagonal1_andando3: -8042623409326390302
+      diagonal1_andando4: -108566827239901049
+      diagonal1_idle: 3712122228006486641
+      diagonal2_andando1: 7718769746530699866
+      diagonal2_andando2: -7850919969101012750
+      diagonal2_andando3: 6154310710226820359
+      diagonal2_andando4: -3546382507242264412
+      diagonal2_idle: -3949601825676549334
+      espalda_andando1: 7113354413580581581
+      espalda_andando2: 4432915177759753048
+      espalda_andando3: -7778829069713210143
+      espalda_andando4: 1802589758964713282
+      espalda_idle: 4113322420082243913
+      frente_andando1: 5142067782583076181
+      frente_andando2: 3932340476477223084
+      frente_andando3: 3802494803434775620
+      frente_andando4: -7459218240450493474
+      frente_idle: 8666607350362981587
+      lateral_andando1: 3726342561259190407
+      lateral_andando2: -6627537145862689327
+      lateral_andando3: 5252686284996889810
+      lateral_andando4: -6467393851605656705
+      lateral_idle: -8602451194663194407
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
