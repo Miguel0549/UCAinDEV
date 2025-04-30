@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6748f1afe57466c46a68beda25d1c120
+guid: 58b5898c431552370a5d3c8c625e07eb
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -168,32 +168,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frente_idle
+      name: _elgranben_mov_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 953
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 14
+        y: 979
+        width: 131
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,15 +194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diagonal1_idle
+      name: _elgranben_mov_1
       rect:
         serializedVersion: 2
-        x: 158
-        y: 953
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 171
+        y: 979
+        width: 132
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -229,15 +216,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lateral_idle
+      name: _elgranben_mov_2
       rect:
         serializedVersion: 2
-        x: 316
-        y: 953
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 326
+        y: 981
+        width: 138
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -251,15 +238,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diagonal2_idle
+      name: _elgranben_mov_3
       rect:
         serializedVersion: 2
-        x: 474
-        y: 953
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 488
+        y: 981
+        width: 129
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -273,15 +260,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: espalda_idle
+      name: _elgranben_mov_4
       rect:
         serializedVersion: 2
-        x: 632
-        y: 953
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 645
+        y: 981
+        width: 131
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -295,15 +282,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frente_andando1
+      name: _elgranben_mov_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 715
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 14
+        y: 738
+        width: 131
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -317,15 +304,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diagonal1_andando1
+      name: _elgranben_mov_6
       rect:
         serializedVersion: 2
-        x: 158
-        y: 715
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 170
+        y: 739
+        width: 134
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -339,15 +326,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lateral_andando1
+      name: _elgranben_mov_7
       rect:
         serializedVersion: 2
-        x: 316
-        y: 715
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 326
+        y: 741
+        width: 138
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -361,15 +348,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diagonal2_andando1
+      name: _elgranben_mov_8
       rect:
         serializedVersion: 2
-        x: 474
-        y: 715
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 487
+        y: 741
+        width: 132
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -383,15 +370,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: espalda_andando1
+      name: _elgranben_mov_9
       rect:
         serializedVersion: 2
-        x: 632
-        y: 715
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 645
+        y: 742
+        width: 131
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -405,15 +392,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frente_andando2
+      name: _elgranben_mov_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 477
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 14
+        y: 494
+        width: 131
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -427,15 +414,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diagonal1_andando2
+      name: _elgranben_mov_11
       rect:
         serializedVersion: 2
-        x: 158
-        y: 477
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 169
+        y: 494
+        width: 136
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -449,15 +436,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lateral_andando2
+      name: _elgranben_mov_12
       rect:
         serializedVersion: 2
-        x: 316
-        y: 477
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 323
+        y: 501
+        width: 144
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -471,15 +458,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diagonal2_andando2
+      name: _elgranben_mov_13
       rect:
         serializedVersion: 2
-        x: 474
-        y: 477
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 486
+        y: 497
+        width: 134
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -493,15 +480,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: espalda_andando2
+      name: _elgranben_mov_14
       rect:
         serializedVersion: 2
-        x: 632
-        y: 477
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 645
+        y: 495
+        width: 131
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -515,15 +502,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frente_andando3
+      name: _elgranben_mov_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 244
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 14
+        y: 263
+        width: 131
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -537,15 +524,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diagonal1_andando3
+      name: _elgranben_mov_16
       rect:
         serializedVersion: 2
-        x: 158
-        y: 244
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 170
+        y: 267
+        width: 134
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -559,15 +546,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lateral_andando3
+      name: _elgranben_mov_17
       rect:
         serializedVersion: 2
-        x: 316
-        y: 244
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 326
+        y: 273
+        width: 138
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -581,15 +568,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diagonal2_andando3
+      name: _elgranben_mov_18
       rect:
         serializedVersion: 2
-        x: 474
-        y: 244
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 487
+        y: 270
+        width: 132
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -603,15 +590,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: espalda_andando3
+      name: _elgranben_mov_19
       rect:
         serializedVersion: 2
-        x: 632
-        y: 244
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 645
+        y: 267
+        width: 131
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -625,110 +612,110 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frente_andando4
+      name: _elgranben_mov_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 10
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 14
+        y: 18
+        width: 131
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 05a12c946949d8e4eae9cb627215af3d
+      spriteID: ed385dbe7888b7890800000000000000
       internalID: -7459218240450493474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diagonal1_andando4
+      name: _elgranben_mov_21
       rect:
         serializedVersion: 2
-        x: 158
-        y: 10
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 169
+        y: 15
+        width: 136
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6bd339c68814f7c4d81dfe4c3ce55e24
+      spriteID: 78879fbbb0b4e7ef0800000000000000
       internalID: -108566827239901049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lateral_andando4
+      name: _elgranben_mov_22
       rect:
         serializedVersion: 2
-        x: 316
-        y: 10
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 325
+        y: 25
+        width: 140
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a961c045f48f4bf4da07db3c7c0e7466
+      spriteID: f7bdf74ce833f36a0800000000000000
       internalID: -6467393851605656705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diagonal2_andando4
+      name: _elgranben_mov_23
       rect:
         serializedVersion: 2
-        x: 474
-        y: 10
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 487
+        y: 24
+        width: 132
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e88ed32f7e70ba643bdd686b518efe7e
+      spriteID: 4a86a2236e7b8cec0800000000000000
       internalID: -3546382507242264412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: espalda_andando4
+      name: _elgranben_mov_24
       rect:
         serializedVersion: 2
-        x: 632
-        y: 10
-        width: 157
-        height: 237
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 645
+        y: 20
+        width: 131
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3df200842ec7b82419f78e8c833bd240
+      spriteID: 24749d2d5d5140910800000000000000
       internalID: 1802589758964713282
       vertices: []
       indices: 
@@ -738,7 +725,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 13438babe3043774a94584066ada0128
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -747,32 +734,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      diagonal1_andando1: -3983173208393468528
-      diagonal1_andando2: 6920210155790681748
-      diagonal1_andando3: -8042623409326390302
-      diagonal1_andando4: -108566827239901049
-      diagonal1_idle: 3712122228006486641
-      diagonal2_andando1: 7718769746530699866
-      diagonal2_andando2: -7850919969101012750
-      diagonal2_andando3: 6154310710226820359
-      diagonal2_andando4: -3546382507242264412
-      diagonal2_idle: -3949601825676549334
-      espalda_andando1: 7113354413580581581
-      espalda_andando2: 4432915177759753048
-      espalda_andando3: -7778829069713210143
-      espalda_andando4: 1802589758964713282
-      espalda_idle: 4113322420082243913
-      frente_andando1: 5142067782583076181
-      frente_andando2: 3932340476477223084
-      frente_andando3: 3802494803434775620
-      frente_andando4: -7459218240450493474
-      frente_idle: 8666607350362981587
-      lateral_andando1: 3726342561259190407
-      lateral_andando2: -6627537145862689327
-      lateral_andando3: 5252686284996889810
-      lateral_andando4: -6467393851605656705
-      lateral_idle: -8602451194663194407
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

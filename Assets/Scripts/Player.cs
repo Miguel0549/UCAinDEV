@@ -2,19 +2,32 @@ using System;
 using NUnit.Framework.Interfaces;
 using UnityEngine;
 
-public class PlayerScript : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public float Speed=7.5f;
+    public float Speed=8.0f;
     public float WalkSpeedMultiplier=0.5f;
     public Rigidbody2D rbody2d;
     private bool Dodging= false;
     public float DodgeCooldown = 1.5f;
     private float LastDodge = 0f;
     public float DodgeDuration = 0.3f;
-    public float DodgeSpeed = 10f;
-    public float FireRate = 1f;
-    public Rigidbody2D Projectile;
-    private float LastFire = 0f;
+    public float DodgeSpeed = 12.0f;
+    public SpriteRenderer sprite;
+
+    public Animator Anim;
+    
+    enum direccion {
+        Arriba,
+        Abajo,
+        Izquierda,
+        Derecha,
+        Izq_Arriba,
+        Izq_Abajo,
+        Dch_Arriba,
+        Dch_Abajo,
+    }
+
+    private direccion lastDir;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,24 +48,44 @@ public class PlayerScript : MonoBehaviour
         if (!Dodging)
         { 
             rbody2d.linearVelocity = new Vector2(Speed * xMovement,Speed * yMovement);
-            if (Time.fixedTime-LastFire>FireRate)
-            {
-                LastFire=Time.fixedTime;
-                Rigidbody2D p = Instantiate(Projectile,transform.position,transform.rotation);
-                p.linearVelocity = rbody2d.linearVelocity * 0.1f + new Vector2(1,0);
-            }
         }
             if (Dodging&&Time.fixedTime-LastDodge>DodgeDuration)
             {
                 Dodging = false;
                 rbody2d.linearVelocity = Vector2.zero;
             }
-            if (Input.GetKey(KeyCode.Space)&&Time.fixedTime-LastDodge>DodgeCooldown && ( xMovement != 0 || yMovement != 0 ))
+            if (Input.GetKey(KeyCode.Space)&&Time.fixedTime-LastDodge>DodgeCooldown)
             {
                 Dodging=true;
                 LastDodge=Time.fixedTime;
-                rbody2d.linearVelocity = new Vector2(DodgeSpeed * xMovement, DodgeSpeed * yMovement);
+                rbody2d.linearVelocity = new Vector2(DodgeSpeed * xMovement,DodgeSpeed * yMovement);
+
             }
-        
+
+            if (xMovement < 0 && yMovement == 0) lastDir = direccion.Izquierda;
+            if (xMovement < 0 && yMovement > 0) lastDir = direccion.Izq_Arriba;
+            if (xMovement == 0 && yMovement > 0) lastDir = direccion.Arriba;
+            if (xMovement > 0 && yMovement > 0) lastDir = direccion.Dch_Arriba;
+            if (xMovement > 0 && yMovement == 0) lastDir = direccion.Derecha;
+            if (xMovement > 0 && yMovement < 0) lastDir = direccion.Dch_Abajo;
+            if (xMovement == 0 && yMovement < 0) lastDir = direccion.Abajo;
+            if (xMovement < 0 && yMovement < 0) lastDir = direccion.Izq_Abajo;
+            
+            sprite.flipX = ( lastDir == direccion.Derecha || lastDir == direccion.Dch_Abajo || lastDir == direccion.Dch_Arriba);
+            
+            Anim.SetBool("Idle",xMovement == 0 && yMovement == 0 && lastDir == direccion.Abajo);
+            Anim.SetBool("IdleArriba",xMovement == 0 && yMovement == 0 && lastDir == direccion.Arriba);
+            Anim.SetBool("IdleHorizontal",xMovement == 0 && yMovement == 0 && ( lastDir == direccion.Izquierda || lastDir == direccion.Derecha) );
+            Anim.SetBool("IdleDiagArriba",xMovement == 0 && yMovement == 0 && ( lastDir == direccion.Izq_Arriba || lastDir == direccion.Dch_Arriba) );
+            Anim.SetBool("IdleDiagAbajo",xMovement == 0 && yMovement == 0 && ( lastDir == direccion.Izq_Abajo || lastDir == direccion.Dch_Abajo) );
+            Anim.SetBool("AndarHorizontal",xMovement != 0 && yMovement == 0);
+            Anim.SetBool("AndarArriba",xMovement == 0 && yMovement > 0 );
+            Anim.SetBool("AndarAbajo",xMovement == 0 && yMovement < 0 );
+            Anim.SetBool("AndarDiagArriba",(xMovement < 0 && yMovement > 0) || ( xMovement > 0 && yMovement > 0 ) );
+            Anim.SetBool("AndarDiagAbajo",(xMovement < 0 && yMovement < 0) || ( xMovement > 0 && yMovement < 0 ) );
+            
+            
+           
+
     }
 }

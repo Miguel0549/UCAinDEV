@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      muro_esquinainterna_0: 147816921811250890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
