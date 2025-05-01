@@ -168,6 +168,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -734,7 +747,32 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      _elgranben_mov_0: 8666607350362981587
+      _elgranben_mov_1: 3712122228006486641
+      _elgranben_mov_10: 3932340476477223084
+      _elgranben_mov_11: 6920210155790681748
+      _elgranben_mov_12: -6627537145862689327
+      _elgranben_mov_13: -7850919969101012750
+      _elgranben_mov_14: 4432915177759753048
+      _elgranben_mov_15: 3802494803434775620
+      _elgranben_mov_16: -8042623409326390302
+      _elgranben_mov_17: 5252686284996889810
+      _elgranben_mov_18: 6154310710226820359
+      _elgranben_mov_19: -7778829069713210143
+      _elgranben_mov_2: -8602451194663194407
+      _elgranben_mov_20: -7459218240450493474
+      _elgranben_mov_21: -108566827239901049
+      _elgranben_mov_22: -6467393851605656705
+      _elgranben_mov_23: -3546382507242264412
+      _elgranben_mov_24: 1802589758964713282
+      _elgranben_mov_3: -3949601825676549334
+      _elgranben_mov_4: 4113322420082243913
+      _elgranben_mov_5: 5142067782583076181
+      _elgranben_mov_6: -3983173208393468528
+      _elgranben_mov_7: 3726342561259190407
+      _elgranben_mov_8: 7718769746530699866
+      _elgranben_mov_9: 7113354413580581581
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
