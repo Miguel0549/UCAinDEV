@@ -176,10 +176,10 @@ TextureImporter:
       name: lobo_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 640
-        width: 210
-        height: 160
+        x: 24
+        y: 670
+        width: 162
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,10 +198,10 @@ TextureImporter:
       name: lobo_1
       rect:
         serializedVersion: 2
-        x: 210
-        y: 640
-        width: 210
-        height: 160
+        x: 283
+        y: 647
+        width: 64
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +220,10 @@ TextureImporter:
       name: lobo_2
       rect:
         serializedVersion: 2
-        x: 420
-        y: 640
-        width: 210
-        height: 160
+        x: 464
+        y: 658
+        width: 123
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,10 +242,10 @@ TextureImporter:
       name: lobo_3
       rect:
         serializedVersion: 2
-        x: 630
-        y: 640
-        width: 210
-        height: 160
+        x: 670
+        y: 658
+        width: 130
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +264,10 @@ TextureImporter:
       name: lobo_4
       rect:
         serializedVersion: 2
-        x: 840
-        y: 640
-        width: 210
-        height: 160
+        x: 911
+        y: 653
+        width: 68
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +286,10 @@ TextureImporter:
       name: lobo_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 480
-        width: 210
-        height: 160
+        x: 25
+        y: 510
+        width: 161
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,10 +308,10 @@ TextureImporter:
       name: lobo_6
       rect:
         serializedVersion: 2
-        x: 210
-        y: 480
-        width: 210
-        height: 160
+        x: 283
+        y: 487
+        width: 64
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,10 +330,10 @@ TextureImporter:
       name: lobo_7
       rect:
         serializedVersion: 2
-        x: 420
-        y: 480
-        width: 210
-        height: 160
+        x: 463
+        y: 498
+        width: 124
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: lobo_8
       rect:
         serializedVersion: 2
-        x: 630
-        y: 480
-        width: 210
-        height: 160
+        x: 670
+        y: 498
+        width: 130
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +374,10 @@ TextureImporter:
       name: lobo_9
       rect:
         serializedVersion: 2
-        x: 840
-        y: 480
-        width: 210
-        height: 160
+        x: 911
+        y: 493
+        width: 68
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,10 +396,10 @@ TextureImporter:
       name: lobo_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 320
-        width: 210
-        height: 160
+        x: 4
+        y: 350
+        width: 202
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,10 +418,10 @@ TextureImporter:
       name: lobo_11
       rect:
         serializedVersion: 2
-        x: 210
-        y: 320
-        width: 210
-        height: 160
+        x: 284
+        y: 325
+        width: 62
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,10 +440,10 @@ TextureImporter:
       name: lobo_12
       rect:
         serializedVersion: 2
-        x: 420
-        y: 320
-        width: 210
-        height: 160
+        x: 457
+        y: 327
+        width: 136
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +462,10 @@ TextureImporter:
       name: lobo_13
       rect:
         serializedVersion: 2
-        x: 630
-        y: 320
-        width: 210
-        height: 160
+        x: 656
+        y: 335
+        width: 158
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +484,10 @@ TextureImporter:
       name: lobo_14
       rect:
         serializedVersion: 2
-        x: 840
-        y: 320
-        width: 210
-        height: 160
+        x: 911
+        y: 324
+        width: 68
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -506,10 +506,10 @@ TextureImporter:
       name: lobo_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
-        width: 210
-        height: 160
+        x: 6
+        y: 190
+        width: 198
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,10 +528,10 @@ TextureImporter:
       name: lobo_16
       rect:
         serializedVersion: 2
-        x: 210
-        y: 160
-        width: 210
-        height: 160
+        x: 287
+        y: 170
+        width: 56
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -550,10 +550,10 @@ TextureImporter:
       name: lobo_17
       rect:
         serializedVersion: 2
-        x: 420
-        y: 160
-        width: 210
-        height: 160
+        x: 459
+        y: 176
+        width: 132
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,10 +572,10 @@ TextureImporter:
       name: lobo_18
       rect:
         serializedVersion: 2
-        x: 630
-        y: 160
-        width: 210
-        height: 160
+        x: 657
+        y: 185
+        width: 156
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,10 +594,10 @@ TextureImporter:
       name: lobo_19
       rect:
         serializedVersion: 2
-        x: 840
-        y: 160
-        width: 210
-        height: 160
+        x: 912
+        y: 175
+        width: 66
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -616,10 +616,10 @@ TextureImporter:
       name: lobo_20
       rect:
         serializedVersion: 2
-        x: 420
-        y: 0
-        width: 210
-        height: 160
+        x: 450
+        y: 30
+        width: 150
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
