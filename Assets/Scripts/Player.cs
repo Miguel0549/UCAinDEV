@@ -43,12 +43,19 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        //Calculo de movimiento
         float xMovement = Input.GetAxis("Horizontal");
         float yMovement = Input.GetAxis("Vertical");
         if (!Dodging)
         { 
-            rbody2d.linearVelocity = new Vector2(Speed * xMovement,Speed * yMovement);
+            if (xMovement != 0f && yMovement != 0f)
+            {
+                xMovement /= (float) Math.Sqrt(2);
+                yMovement /= (float) Math.Sqrt(2);
+            }
+            rbody2d.linearVelocity = new Vector2(xMovement,yMovement) * (Speed * (1 - System.Convert.ToSingle(Input.GetKey(KeyCode.LeftShift)) * WalkSpeedMultiplier));
         }
+        //Codigo de esquivar
             if (Dodging&&Time.fixedTime-LastDodge>DodgeDuration)
             {
                 Dodging = false;
@@ -61,6 +68,7 @@ public class Player : MonoBehaviour
                 rbody2d.linearVelocity = new Vector2(DodgeSpeed * xMovement,DodgeSpeed * yMovement);
 
             }
+            //Codigo de animaciones
 
             if (xMovement < 0 && yMovement == 0) lastDir = direccion.Izquierda;
             if (xMovement < 0 && yMovement > 0) lastDir = direccion.Izq_Arriba;
