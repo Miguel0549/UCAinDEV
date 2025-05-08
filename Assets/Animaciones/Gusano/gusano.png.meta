@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 42c298534de07314499e424639ee4ec8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7605020491070200781
+    second: gusano_0
+  - first:
+      213: 4444982479454663550
+    second: gusano_1
+  - first:
+      213: -3509359202575828285
+    second: gusano_2
+  - first:
+      213: -7564197063158047227
+    second: gusano_3
+  - first:
+      213: 4388556906870636235
+    second: gusano_4
+  - first:
+      213: 5244754266541577192
+    second: gusano_5
+  - first:
+      213: 5338323013356324459
+    second: gusano_6
+  - first:
+      213: -5569764820657987384
+    second: gusano_7
+  - first:
+      213: 942471657296695516
+    second: gusano_8
+  - first:
+      213: -7568406453256174142
+    second: gusano_9
+  - first:
+      213: -7277442372103651776
+    second: gusano_10
+  - first:
+      213: 342786714520668974
+    second: gusano_11
+  - first:
+      213: 3523977464356557595
+    second: gusano_12
+  - first:
+      213: 2617811833112968099
+    second: gusano_13
+  - first:
+      213: -2185099007087238292
+    second: gusano_14
+  - first:
+      213: -5101812294484167150
+    second: gusano_15
+  - first:
+      213: -8621807748301341466
+    second: gusano_16
+  - first:
+      213: -6805455464368477062
+    second: gusano_17
+  - first:
+      213: 6375570624284728163
+    second: gusano_18
+  - first:
+      213: 6905168064864360860
+    second: gusano_19
+  - first:
+      213: -8132294011206587100
+    second: gusano_20
+  - first:
+      213: 3023300972485616530
+    second: gusano_21
+  - first:
+      213: 3535618241047240207
+    second: gusano_22
+  - first:
+      213: 1843055489648428846
+    second: gusano_23
+  - first:
+      213: -4327184890195444776
+    second: gusano_24
+  - first:
+      213: -3068748057670243416
+    second: gusano_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cabeza_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1255
+        width: 372
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c520b4b306d36d64992ed19a128e090e
+      internalID: -728925024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla1_diagonal_1
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1295
+        width: 156
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312cc048b99ad9b4986cc240a81eecf0
+      internalID: -890615813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cabeza_2
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1053
+        width: 372
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710309960b8891a49ac3a184fe282a9a
+      internalID: 805492753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla1_diagonal_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1137
+        width: 156
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50189729d532004468360213bbafc0c7
+      internalID: 1401556441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla2b_diagonal_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 919
+        width: 138
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd89a1a78f1acea4287ff138b341e511
+      internalID: 1870354357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cola_vertical
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 813
+        width: 236
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b097fb2533d58b48ae92e5a750328d2
+      internalID: -80155331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla1_vertical
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 979
+        width: 156
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7373003b5239009469b49e2e2ef187ed
+      internalID: -1628234270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla2b_diagonal_2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 781
+        width: 138
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e35b763d1d9f043b5c0df31d9ed4b8
+      internalID: 861540383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla1_horizontal_1
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 821
+        width: 156
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ddb19aa35ab074ab3d09ddf555e9b9
+      internalID: -1090914740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla2_diagonal_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 643
+        width: 138
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c22fad6f8879f41ab2056cc9b97935
+      internalID: -1417291111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cola_diagonal
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 575
+        width: 236
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78e2f394fd76da47817572ba6c5b0d7
+      internalID: -1739517767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla1_horizontal_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 663
+        width: 156
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecc292814e80cc46b65b8c2c418fa75
+      internalID: 16687378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla2_diagonal_2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 505
+        width: 138
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6fe157284a8ea84da36bbb73acdea67
+      internalID: 750398787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla2b_horizontal_1
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 525
+        width: 138
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbca5b3f99345947959f9ea957aca60
+      internalID: 5230850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla2b_vertical
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 367
+        width: 138
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172002bc6a6dbb1458a9a6557691e97a
+      internalID: -1492414859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cola_horizonta
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 337
+        width: 236
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b086db1425734345998c9d40fa644fd
+      internalID: 37795701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla2_horizonta_1
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 387
+        width: 138
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7c128ac7315324e9c362e60fe64e0c
+      internalID: 1790399561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla_2_vertical
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 229
+        width: 138
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ac1216a9a678a45a5b1403e07e8e93
+      internalID: -368285223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla3_diagonal
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 225
+        width: 122
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7602eafc62e1847bf372422b8ecaaa
+      internalID: -1997821932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla4_diagonal
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 243
+        width: 102
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a6a6fac735d71419a87bc200101c0f
+      internalID: 1784771128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla2b_horizontal_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 249
+        width: 138
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240d113ae2564f14caf317454dc685fe
+      internalID: -1904612228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla3_vertical
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 113
+        width: 122
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fb3424a10acea4bae61895d6428934
+      internalID: 1293164140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla4_vertical
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 145
+        width: 102
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715f1af95e0e7844eae111cd0c567e5c
+      internalID: -887289928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla2_horzontal_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 111
+        width: 138
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9c99d54992e3a4fb518ca9c4b59e96
+      internalID: 430372802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla3_horizontal
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 2
+        width: 122
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7673c50faabd3634f818203e26c707f0
+      internalID: -902979640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anilla4_horizontal
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 47
+        width: 102
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df20255f1c1d9d14eb7afee959371938
+      internalID: 2056346075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5981127d3cbcb754d88f9645d7b229ba
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      anilla1_diagonal_1: -890615813
+      anilla1_diagonal_2: 1401556441
+      anilla1_horizontal_1: -1090914740
+      anilla1_horizontal_2: 16687378
+      anilla1_vertical: -1628234270
+      anilla2_diagonal_1: -1417291111
+      anilla2_diagonal_2: 750398787
+      anilla2_horizonta_1: 1790399561
+      anilla2_horzontal_2: 430372802
+      anilla2b_diagonal_1: 1870354357
+      anilla2b_diagonal_2: 861540383
+      anilla2b_horizontal_1: 5230850
+      anilla2b_horizontal_2: -1904612228
+      anilla2b_vertical: -1492414859
+      anilla3_diagonal: -1997821932
+      anilla3_horizontal: -902979640
+      anilla3_vertical: 1293164140
+      anilla4_diagonal: 1784771128
+      anilla4_horizontal: 2056346075
+      anilla4_vertical: -887289928
+      anilla_2_vertical: -368285223
+      cabeza_1: -728925024
+      cabeza_2: 805492753
+      cola_diagonal: -1739517767
+      cola_horizonta: 37795701
+      cola_vertical: -80155331
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
