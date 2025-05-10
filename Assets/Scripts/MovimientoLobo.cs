@@ -6,14 +6,13 @@ public class MovimientoBichos : MonoBehaviour
 {
 	public BoxCollider2D collider_player;
 	public BoxCollider2D collider_lobo;
-	public Rigidbody2D rbody2D;
 	public NavMeshAgent agent;    
     
     void Start()
     {
-	    Physics2D.IgnoreCollision(collider_player, collider_lobo);
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        agent.enabled = false;
     }
 
     // Update is called once per frame

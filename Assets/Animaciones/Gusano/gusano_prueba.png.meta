@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 3d381d5f98fbc2eed9a10c6f62a00816
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3879215870961501159
+    second: gusano_prueba_0
+  - first:
+      213: 7418164324759686934
+    second: gusano_prueba_1
+  - first:
+      213: -325087962205582184
+    second: gusano_prueba_2
+  - first:
+      213: -3342849285998131748
+    second: gusano_prueba_3
+  - first:
+      213: -2207945971226537470
+    second: gusano_prueba_4
+  - first:
+      213: -9190610338282136402
+    second: gusano_prueba_5
+  - first:
+      213: -300599033714128670
+    second: gusano_prueba_6
+  - first:
+      213: -8933883333738830992
+    second: gusano_prueba_7
+  - first:
+      213: -2075134669530801216
+    second: gusano_prueba_8
+  - first:
+      213: -8241451341010567683
+    second: gusano_prueba_9
+  - first:
+      213: 6825112241136576718
+    second: gusano_prueba_10
+  - first:
+      213: -4034794072276210942
+    second: gusano_prueba_11
+  - first:
+      213: -8228133127961734276
+    second: gusano_prueba_12
+  - first:
+      213: 3476110833786032708
+    second: gusano_prueba_13
+  - first:
+      213: -8152042258864463369
+    second: gusano_prueba_14
+  - first:
+      213: -8762447844745298130
+    second: gusano_prueba_15
+  - first:
+      213: -3638770452425263835
+    second: gusano_prueba_16
+  - first:
+      213: 7168292152542254330
+    second: gusano_prueba_17
+  - first:
+      213: 2796479471543272602
+    second: gusano_prueba_18
+  - first:
+      213: -7683032481333931053
+    second: gusano_prueba_19
+  - first:
+      213: 8417783289277758844
+    second: gusano_prueba_20
+  - first:
+      213: 2806431097317299358
+    second: gusano_prueba_21
+  - first:
+      213: 7873457599988160810
+    second: gusano_prueba_22
+  - first:
+      213: -4173016103577738224
+    second: gusano_prueba_23
+  - first:
+      213: -2486969656107787159
+    second: gusano_prueba_24
+  - first:
+      213: -625960454144183080
+    second: gusano_prueba_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gusano_prueba_0
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 450
+        width: 124
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c3844e7b14a2ac0800000000000000
+      internalID: -3879215870961501159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_1
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 450
+        width: 124
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fc6c6762d92f660800000000000000
+      internalID: 7418164324759686934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_2
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 435
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c0bf3883e0d7bf0800000000000000
+      internalID: -325087962205582184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_3
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 435
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5c96a1940db91d0800000000000000
+      internalID: -3342849285998131748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_4
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 436
+        width: 120
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20299cd56dccb51e0800000000000000
+      internalID: -2207945971226537470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_5
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 436
+        width: 120
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac19ad5794647080800000000000000
+      internalID: -9190610338282136402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_6
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 201
+        width: 191
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8c4af75ce04dbf0800000000000000
+      internalID: -300599033714128670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_7
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 189
+        width: 186
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073e6b31178740480800000000000000
+      internalID: -8933883333738830992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 290
+        width: 80
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbd4893304a333e0800000000000000
+      internalID: -2075134669530801216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_9
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 312
+        width: 109
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdf561abab70ad80800000000000000
+      internalID: -8241451341010567683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_10
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 300
+        width: 103
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8ad1d1c6ba7be50800000000000000
+      internalID: 6825112241136576718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_11
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 179
+        width: 144
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20bef142b288108c0800000000000000
+      internalID: -4034794072276210942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_12
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 200
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73973fb38ccfcd80800000000000000
+      internalID: -8228133127961734276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_13
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 225
+        width: 236
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44214b7d260ad3030800000000000000
+      internalID: 3476110833786032708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_14
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 183
+        width: 64
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f12966c1c02ede80800000000000000
+      internalID: -8152042258864463369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_15
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 204
+        width: 88
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2fb1135c18856680800000000000000
+      internalID: -8762447844745298130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_16
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 190
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52531047d8d708dc0800000000000000
+      internalID: -3638770452425263835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_17
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 30
+        width: 94
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af45086cbb3ea7360800000000000000
+      internalID: 7168292152542254330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_18
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 30
+        width: 94
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94420353471fc620800000000000000
+      internalID: 2796479471543272602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_19
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 30
+        width: 94
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d39d482aa2606590800000000000000
+      internalID: -7683032481333931053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_20
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 30
+        width: 94
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7dbe916d49f1d470800000000000000
+      internalID: 8417783289277758844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_21
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 11
+        width: 110
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e941532c63272f620800000000000000
+      internalID: 2806431097317299358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_22
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 11
+        width: 110
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29d469c8f3244d60800000000000000
+      internalID: 7873457599988160810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_23
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 37
+        width: 144
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014a340a6f77616c0800000000000000
+      internalID: -4173016103577738224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_24
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 20
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c158836428c7dd0800000000000000
+      internalID: -2486969656107787159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_prueba_25
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 20
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d43b4f88442057f0800000000000000
+      internalID: -625960454144183080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 920b9d124487a44c7af3156a94afecde
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gusano_prueba_0: -3879215870961501159
+      gusano_prueba_1: 7418164324759686934
+      gusano_prueba_10: 6825112241136576718
+      gusano_prueba_11: -4034794072276210942
+      gusano_prueba_12: -8228133127961734276
+      gusano_prueba_13: 3476110833786032708
+      gusano_prueba_14: -8152042258864463369
+      gusano_prueba_15: -8762447844745298130
+      gusano_prueba_16: -3638770452425263835
+      gusano_prueba_17: 7168292152542254330
+      gusano_prueba_18: 2796479471543272602
+      gusano_prueba_19: -7683032481333931053
+      gusano_prueba_2: -325087962205582184
+      gusano_prueba_20: 8417783289277758844
+      gusano_prueba_21: 2806431097317299358
+      gusano_prueba_22: 7873457599988160810
+      gusano_prueba_23: -4173016103577738224
+      gusano_prueba_24: -2486969656107787159
+      gusano_prueba_25: -625960454144183080
+      gusano_prueba_3: -3342849285998131748
+      gusano_prueba_4: -2207945971226537470
+      gusano_prueba_5: -9190610338282136402
+      gusano_prueba_6: -300599033714128670
+      gusano_prueba_7: -8933883333738830992
+      gusano_prueba_8: -2075134669530801216
+      gusano_prueba_9: -8241451341010567683
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

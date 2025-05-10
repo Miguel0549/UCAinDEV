@@ -1,18 +1,17 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AlertaBichos : MonoBehaviour
+public class MovimientoCabeza : MonoBehaviour
 {
-    public NavMeshAgent Lobo;
-    
+    public Camera camara;
+    public NavMeshAgent agent;
     
     void OnTriggerStay2D(Collider2D collision)
     {
-        
-        Lobo.enabled = true;
+        agent.enabled = true;
         if (collision.gameObject.tag == "Player")
         {
-            Lobo.SetDestination(collision.gameObject.transform.position);
+            agent.SetDestination(collision.gameObject.transform.position);
         }
         
     }
@@ -22,7 +21,8 @@ public class AlertaBichos : MonoBehaviour
        
         if (collision.gameObject.tag == "Player")
         {
-            Lobo.enabled = false;
+            agent.enabled = false;
+            agent.Warp(new Vector3(40, 28, 0));
         }
     }
 }
