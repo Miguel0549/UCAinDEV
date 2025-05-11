@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class SmoothCamera : MonoBehaviour
 {
     private float smoothTime = 0.5f;
     private Vector3 velocity = Vector3.zero;
