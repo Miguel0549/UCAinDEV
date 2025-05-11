@@ -38,13 +38,18 @@ public class MovimientoGusano : MonoBehaviour
     void FixedUpdate()
     {
         
-        Vector2 movement = new Vector2( target.position.x - agentTransform.position.x, target.position.y - agentTransform.position.y );
+		if ( agent_cabeza.enabled == true )
+		{
+
+			Vector2 movement = new Vector2( target.position.x - agentTransform.position.x, target.position.y - agentTransform.position.y );
         
-        if (movement != Vector2.zero)
-        {
-            Quaternion to_rotation = Quaternion.LookRotation(Vector3.forward,movement);
-            agentTransform.rotation = Quaternion.RotateTowards( agentTransform.rotation, to_rotation, rotationSpeed * Time.deltaTime );
-        }
+        	if (movement != Vector2.zero)
+        	{
+          	  Quaternion to_rotation = Quaternion.LookRotation(Vector3.forward,movement);
+           	 agentTransform.rotation = Quaternion.RotateTowards( agentTransform.rotation, to_rotation, rotationSpeed * Time.deltaTime );
+        	}
+
+		}
 
         if (this.tag != "Cabeza")
         {

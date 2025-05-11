@@ -54,7 +54,10 @@ public class Player : MonoBehaviour
                 yMovement /= (float) Math.Sqrt(2);
             }
             rbody2d.linearVelocity = new Vector2(xMovement,yMovement) * (Speed * (1 - System.Convert.ToSingle(Input.GetKey(KeyCode.LeftShift)) * WalkSpeedMultiplier));
+            if (Input.GetKey(KeyCode.LeftShift) == true) Anim.SetFloat("Speed", 0.5f);
+            else Anim.SetFloat("Speed", 1f);
         }
+        
         //Codigo de esquivar
             if (Dodging&&Time.fixedTime-LastDodge>DodgeDuration)
             {

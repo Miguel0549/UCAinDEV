@@ -8,9 +8,10 @@ public class MovimientoCabeza : MonoBehaviour
     
     void OnTriggerStay2D(Collider2D collision)
     {
-        agent.enabled = true;
+        
         if (collision.gameObject.tag == "Player")
         {
+            agent.enabled = true;
             agent.SetDestination(collision.gameObject.transform.position);
         }
         
