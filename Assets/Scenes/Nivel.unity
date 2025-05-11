@@ -340,7 +340,7 @@ MonoBehaviour:
   VidaMaxima: 4
   Corazones: {fileID: 1239209938}
   corazon_vacio: {fileID: 21300002, guid: fed24bd82cefc0c4a8ef64dab6231b53, type: 3}
-  dmg_delay: 2
+  dmg_delay: 1.5
 --- !u!1 &75470974
 GameObject:
   m_ObjectHideFlags: 0

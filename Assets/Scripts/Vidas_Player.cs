@@ -10,9 +10,14 @@ public class Vidas_Player : MonoBehaviour
     private int contadorVidasPerdidas = 0;
     public GameObject Corazones;
     public Sprite corazon_vacio;
-    private bool invulnerable = false; 
     public float dmg_delay = 2.0f;
+    private float dmg_cd = 0f;
     
+    
+    void Update()
+    {
+        if (dmg_cd > 0) dmg_cd -= Time.deltaTime;
+    }
     
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -20,32 +25,20 @@ public class Vidas_Player : MonoBehaviour
         
         if (collision.gameObject.tag == "Enemigo" || collision.gameObject.tag == "Cabeza" )
         {
-            if ( invulnerable == true ) return;
+            if ( dmg_cd > 0 ) return;
             
-            Image[] corazon = Corazones.GetComponentsInChildren<Image>();                                /*          */
-            corazon[contadorVidasPerdidas].sprite = corazon_vacio;                                       /*Error aqui*/
+            Debug.Log("Colision");
+            Image[] corazon = Corazones.GetComponentsInChildren<Image>();                               
+            corazon[contadorVidasPerdidas].sprite = corazon_vacio;                                       
 
-            contadorVidasPerdidas += 1;
+            contadorVidasPerdidas++;
             
             if (contadorVidasPerdidas >= VidaMaxima) Debug.Log("Vidas perdidas");
             
-            invulnerable = true;
+            dmg_cd = dmg_delay;
             
-            StartCoroutine(DamageDelay());
         }
-
         
-        
-    }
-    
-    
-    private IEnumerator DamageDelay()
-    {
-        // Wait for the specified amount of time
-        yield return new WaitForSeconds(dmg_delay);
-
-        // Set the invulnerable flag to false
-        invulnerable = false;
     }
 
 }
