@@ -5,6 +5,17 @@ public class MovimientoCabeza : MonoBehaviour
 {
     public Camera camara;
     public NavMeshAgent agent;
+    public GameObject pared_inv;
+
+    void Start()
+    {
+        pared_inv.SetActive(false);
+    }
+    
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        pared_inv.SetActive(true);
+    }
     
     void OnTriggerStay2D(Collider2D collision)
     {

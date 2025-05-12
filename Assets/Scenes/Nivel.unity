@@ -131,9 +131,11 @@ GameObject:
   - component: {fileID: 8983068}
   - component: {fileID: 8983070}
   - component: {fileID: 8983069}
+  - component: {fileID: 8983071}
+  - component: {fileID: 8983072}
   m_Layer: 0
   m_Name: Cuerpo_1_6
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusanoGema
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -246,6 +248,59 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &8983071
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8983066}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0000009536743, y: 0}
+  m_Size: {x: 0.94000024, y: 1.3800004}
+  m_Direction: 0
+--- !u!114 &8983072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8983066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c07455ae37ed336ba3a629f08f9bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VidaMaxima: 1
+  CuerpoGusanoDestruido: {fileID: 0}
+  derrotado: 0
+  contado: 0
 --- !u!1 &26949709
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,9 +408,10 @@ GameObject:
   - component: {fileID: 75470976}
   - component: {fileID: 75470978}
   - component: {fileID: 75470977}
+  - component: {fileID: 75470979}
   m_Layer: 0
   m_Name: Cuerpo_3_4
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,6 +524,43 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &75470979
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75470974}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.0000076293945}
+  m_Size: {x: 0.64000016, y: 1.0200002}
+  m_Direction: 0
 --- !u!1 &119562354
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +637,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -570,6 +663,84 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &145447881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 145447883}
+  - component: {fileID: 145447882}
+  m_Layer: 0
+  m_Name: ParedInvisibleBoss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &145447882
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145447881}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.34267044, y: 0.17112303}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.2172775, y: 1.340394}
+  m_EdgeRadius: 0
+--- !u!4 &145447883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145447881}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 52.5, y: 13.49, z: 0.6017326}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161921986
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,7 +970,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c07455ae37ed336ba3a629f08f9bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VidaMaxima: 5
+  VidaMaxima: 1
+  CuerpoGusanoDestruido: {fileID: 0}
+  derrotado: 0
+  contado: 0
 --- !u!1 &170103968
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,6 +983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 170103969}
+  - component: {fileID: 170103970}
   m_Layer: 0
   m_Name: Gusano
   m_TagString: Enemigo
@@ -850,6 +1025,19 @@ Transform:
   - {fileID: 1992782465}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &170103970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170103968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515a17097180053c88260998e1cbc9ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  n_cuerpos: 6
 --- !u!1 &252700744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,9 +1222,10 @@ GameObject:
   - component: {fileID: 385649263}
   - component: {fileID: 385649265}
   - component: {fileID: 385649264}
+  - component: {fileID: 385649266}
   m_Layer: 0
   m_Name: Cuerpo_2_3
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1149,6 +1338,43 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &385649266
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385649261}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0000009536743, y: 0.0000038146973}
+  m_Size: {x: 0.8000002, y: 1.2200003}
+  m_Direction: 0
 --- !u!1 &393283168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,9 +1387,11 @@ GameObject:
   - component: {fileID: 393283170}
   - component: {fileID: 393283172}
   - component: {fileID: 393283171}
+  - component: {fileID: 393283173}
+  - component: {fileID: 393283174}
   m_Layer: 0
   m_Name: Cuerpo_1_5
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusanoGema
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1227,7 +1455,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 15
-  m_Sprite: {fileID: -7683032481333931053, guid: 3d381d5f98fbc2eed9a10c6f62a00816, type: 3}
+  m_Sprite: {fileID: 7168292152542254330, guid: 3d381d5f98fbc2eed9a10c6f62a00816, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1276,6 +1504,59 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &393283173
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393283168}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0000009536743, y: 0.0000019073486}
+  m_Size: {x: 0.94000024, y: 1.3800004}
+  m_Direction: 0
+--- !u!114 &393283174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393283168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c07455ae37ed336ba3a629f08f9bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VidaMaxima: 1
+  CuerpoGusanoDestruido: {fileID: 0}
+  derrotado: 0
+  contado: 0
 --- !u!1 &442765984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,9 +1569,10 @@ GameObject:
   - component: {fileID: 442765986}
   - component: {fileID: 442765988}
   - component: {fileID: 442765987}
+  - component: {fileID: 442765989}
   m_Layer: 0
   m_Name: Cuerpo_3_2
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1403,6 +1685,43 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &442765989
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442765984}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.0000038146973}
+  m_Size: {x: 0.64000016, y: 1.0200002}
+  m_Direction: 0
 --- !u!1 &557289896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,9 +1734,10 @@ GameObject:
   - component: {fileID: 557289898}
   - component: {fileID: 557289900}
   - component: {fileID: 557289899}
+  - component: {fileID: 557289901}
   m_Layer: 0
   m_Name: Cuerpo_2_4
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1530,6 +1850,43 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &557289901
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557289896}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0000009536743, y: 0}
+  m_Size: {x: 0.8000002, y: 1.2200003}
+  m_Direction: 0
 --- !u!1 &564228597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,9 +1899,10 @@ GameObject:
   - component: {fileID: 564228599}
   - component: {fileID: 564228601}
   - component: {fileID: 564228600}
+  - component: {fileID: 564228602}
   m_Layer: 0
   m_Name: Cuerpo_3_6
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1657,6 +2015,43 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &564228602
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564228597}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.64000016, y: 1.0200002}
+  m_Direction: 0
 --- !u!1 &676473300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,7 +2131,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.3, y: 0.3, z: 0}
+  m_ChunkCullingBounds: {x: 0.3, y: 0.305, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -6815,9 +7210,9 @@ Tilemap:
   - first: {x: 26, y: 10, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 16
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 3
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -6825,9 +7220,9 @@ Tilemap:
   - first: {x: 27, y: 10, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 16
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 3
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -7095,8 +7490,8 @@ Tilemap:
   - first: {x: 26, y: 11, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 14
-      m_TileSpriteIndex: 15
+      m_TileIndex: 13
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7105,9 +7500,9 @@ Tilemap:
   - first: {x: 27, y: 11, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 14
-      m_TileSpriteIndex: 15
-      m_TileMatrixIndex: 4
+      m_TileIndex: 2
+      m_TileSpriteIndex: 13
+      m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -7805,9 +8200,9 @@ Tilemap:
   - first: {x: 41, y: 13, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 15
-      m_TileSpriteIndex: 16
-      m_TileMatrixIndex: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -7815,9 +8210,9 @@ Tilemap:
   - first: {x: 42, y: 13, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 14
-      m_TileSpriteIndex: 15
-      m_TileMatrixIndex: 4
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -8085,9 +8480,9 @@ Tilemap:
   - first: {x: 41, y: 14, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 16
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 3
+      m_TileIndex: 13
+      m_TileSpriteIndex: 14
+      m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -8095,8 +8490,8 @@ Tilemap:
   - first: {x: 42, y: 14, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 14
-      m_TileSpriteIndex: 15
+      m_TileIndex: 2
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -8465,9 +8860,9 @@ Tilemap:
   - first: {x: 23, y: 16, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 16
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 4
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -8475,8 +8870,8 @@ Tilemap:
   - first: {x: 24, y: 16, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 15
-      m_TileSpriteIndex: 16
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -8745,9 +9140,9 @@ Tilemap:
   - first: {x: 23, y: 17, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 16
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 2
+      m_TileIndex: 13
+      m_TileSpriteIndex: 14
+      m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -8755,9 +9150,9 @@ Tilemap:
   - first: {x: 24, y: 17, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 14
-      m_TileSpriteIndex: 15
-      m_TileMatrixIndex: 4
+      m_TileIndex: 2
+      m_TileSpriteIndex: 13
+      m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -9824,12 +10219,12 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: 6bfc2486c6da4ce6c935032ae0ee11f6, type: 2}
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: ff9892f4fdbf1f01984b57a80c1facd2, type: 2}
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: 84c7f2babbb3291009588290c72c668e, type: 2}
   - m_RefCount: 20
     m_Data: {fileID: 11400000, guid: be4a3130dad6a9c7fa670414ba3fb9fa, type: 2}
   - m_RefCount: 26
@@ -9850,21 +10245,21 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: e2c858b056d26c542b68386842879078, type: 2}
   - m_RefCount: 21
     m_Data: {fileID: 11400000, guid: 2edf22012d3b79c499f01a8410ba8afb, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 86
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: ab8829c6aee65a703a4bfe5c33eb848d, type: 2}
+  - m_RefCount: 81
     m_Data: {fileID: 11400000, guid: 76bb4b084d6abc8e99b079b4cfe4f5e7, type: 2}
-  - m_RefCount: 239
+  - m_RefCount: 237
     m_Data: {fileID: 11400000, guid: 502889c6a846bfd8c885e57865fcfed0, type: 2}
-  - m_RefCount: 205
+  - m_RefCount: 200
     m_Data: {fileID: 11400000, guid: 5c0497621f6c1d3409f0327f759b4834, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 205
+  - m_RefCount: 200
     m_Data: {fileID: -6579315544772429313, guid: 77faedf1f505d034a9f9805c8034f46e, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 3
+    m_Data: {fileID: -289334020417384919, guid: 8128b5dfb041569059ba356bac5535eb, type: 3}
+  - m_RefCount: 3
+    m_Data: {fileID: 6864908831845909593, guid: a5b493f9af1dddeb7bccff597062621b, type: 3}
   - m_RefCount: 20
     m_Data: {fileID: 5497377391162957932, guid: 4844b35e0aaa566b49ce7d6a0fcc7011, type: 3}
   - m_RefCount: 26
@@ -9885,16 +10280,16 @@ Tilemap:
     m_Data: {fileID: -5164539499648022840, guid: f2a2881a1bce47f4fb3af642d87eca7b, type: 3}
   - m_RefCount: 21
     m_Data: {fileID: 3943379706135669103, guid: ae57e3e3ff56dbb4f9424e19d04f0fc3, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 86
+  - m_RefCount: 3
+    m_Data: {fileID: -3166588922899365351, guid: ba7143f3bfb9518558f137725b84d426, type: 3}
+  - m_RefCount: 3
+    m_Data: {fileID: -4724820870385173026, guid: 2e8c014eb978214ba9975efdffa637f5, type: 3}
+  - m_RefCount: 81
     m_Data: {fileID: 8288815987979608316, guid: a751e7b516910cac78f00b9ace311262, type: 3}
-  - m_RefCount: 239
+  - m_RefCount: 237
     m_Data: {fileID: -572035032834126640, guid: f2387aadc58cd6ff2ac0473ca07462db, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 292
+  - m_RefCount: 301
     m_Data:
       e00: 1
       e01: 0
@@ -9930,7 +10325,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 113
+  - m_RefCount: 111
     m_Data:
       e00: -1
       e01: 0
@@ -9948,7 +10343,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 145
+  - m_RefCount: 142
     m_Data:
       e00: 0
       e01: 1
@@ -9966,7 +10361,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 130
+  - m_RefCount: 126
     m_Data:
       e00: 0
       e01: -1
@@ -10103,9 +10498,10 @@ GameObject:
   - component: {fileID: 741829378}
   - component: {fileID: 741829380}
   - component: {fileID: 741829379}
+  - component: {fileID: 741829381}
   m_Layer: 0
   m_Name: Cuerpo_2_2
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10218,6 +10614,43 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &741829381
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741829376}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0000009536743, y: 0.0000038146973}
+  m_Size: {x: 0.8000002, y: 1.2200003}
+  m_Direction: 0
 --- !u!1 &820048784
 GameObject:
   m_ObjectHideFlags: 0
@@ -10230,9 +10663,10 @@ GameObject:
   - component: {fileID: 820048786}
   - component: {fileID: 820048788}
   - component: {fileID: 820048787}
+  - component: {fileID: 820048789}
   m_Layer: 0
   m_Name: Cuerpo_3_3
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10345,6 +10779,43 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &820048789
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820048784}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.0000038146973}
+  m_Size: {x: 0.64000016, y: 1.0200002}
+  m_Direction: 0
 --- !u!1 &834950638
 GameObject:
   m_ObjectHideFlags: 0
@@ -10357,9 +10828,11 @@ GameObject:
   - component: {fileID: 834950640}
   - component: {fileID: 834950642}
   - component: {fileID: 834950641}
+  - component: {fileID: 834950643}
+  - component: {fileID: 834950644}
   m_Layer: 0
   m_Name: Cuerpo_1_3
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusanoGema
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10423,7 +10896,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 17
-  m_Sprite: {fileID: -7683032481333931053, guid: 3d381d5f98fbc2eed9a10c6f62a00816, type: 3}
+  m_Sprite: {fileID: 7168292152542254330, guid: 3d381d5f98fbc2eed9a10c6f62a00816, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10472,6 +10945,59 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &834950643
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834950638}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0000009536743, y: 0.0000019073486}
+  m_Size: {x: 0.94000024, y: 1.3800004}
+  m_Direction: 0
+--- !u!114 &834950644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834950638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c07455ae37ed336ba3a629f08f9bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VidaMaxima: 1
+  CuerpoGusanoDestruido: {fileID: 0}
+  derrotado: 0
+  contado: 0
 --- !u!1 &920485415
 GameObject:
   m_ObjectHideFlags: 0
@@ -10499,7 +11025,7 @@ RectTransform:
   m_GameObject: {fileID: 920485415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0607, y: 2.0607, z: 2.0607}
+  m_LocalScale: {x: 1.5871305, y: 1.5871305, z: 1.5871305}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1239209939}
@@ -10547,6 +11073,168 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920485415}
   m_CullTransparentMesh: 1
+--- !u!1 &970943093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970943095}
+  - component: {fileID: 970943094}
+  - component: {fileID: 970943097}
+  - component: {fileID: 970943096}
+  m_Layer: 0
+  m_Name: Square
+  m_TagString: Bullet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &970943094
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970943093}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &970943095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970943093}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.97, y: 18.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &970943096
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970943093}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &970943097
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970943093}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1022928496
 GameObject:
   m_ObjectHideFlags: 0
@@ -10574,7 +11262,7 @@ RectTransform:
   m_GameObject: {fileID: 1022928496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0607, y: 2.0607, z: 2.0607}
+  m_LocalScale: {x: 1.587131, y: 1.587131, z: 1.587131}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1239209939}
@@ -10634,9 +11322,10 @@ GameObject:
   - component: {fileID: 1045406585}
   - component: {fileID: 1045406587}
   - component: {fileID: 1045406586}
+  - component: {fileID: 1045406588}
   m_Layer: 0
   m_Name: Cuerpo_3_5
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10749,6 +11438,43 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &1045406588
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045406583}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.0000038146973}
+  m_Size: {x: 0.64000016, y: 1.0200002}
+  m_Direction: 0
 --- !u!1 &1239209938
 GameObject:
   m_ObjectHideFlags: 0
@@ -10776,7 +11502,7 @@ RectTransform:
   m_GameObject: {fileID: 1239209938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.24864, y: 0.24864, z: 0.24864}
+  m_LocalScale: {x: 0.24808161, y: 0.24808161, z: 0.24808161}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1022928497}
@@ -10787,8 +11513,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 176.84418, y: -46.25174}
-  m_SizeDelta: {x: 1422.5082, y: 372.0312}
+  m_AnchoredPosition: {x: 170.0654, y: -41.80316}
+  m_SizeDelta: {x: 1367.8585, y: 336.1675}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1239209940
 MonoBehaviour:
@@ -10908,6 +11634,99 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1301683170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1301683173}
+  - component: {fileID: 1301683172}
+  - component: {fileID: 1301683171}
+  m_Layer: 0
+  m_Name: ParedInvisibleBichos_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1301683171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301683170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9621e5243e7d57025bd6a945e633defe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemigo_1: Esqueleto_1
+  Enemigo_2: Esqueleto_2
+--- !u!61 &1301683172
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301683170}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.34267044, y: 0.17112327}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.2172775, y: 1.3403945}
+  m_EdgeRadius: 0
+--- !u!4 &1301683173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301683170}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 52.5, y: 0.52, z: 0.6017326}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1347772074
 GameObject:
   m_ObjectHideFlags: 0
@@ -11015,7 +11834,7 @@ Camera:
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 6
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -11086,7 +11905,7 @@ RectTransform:
   m_GameObject: {fileID: 1353089996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0607, y: 2.0607, z: 2.0607}
+  m_LocalScale: {x: 1.587131, y: 1.587131, z: 1.587131}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1239209939}
@@ -12882,6 +13701,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 2147483649
+  - first: {x: 26, y: 10, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
+  - first: {x: 27, y: 10, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
   - first: {x: 46, y: 10, z: 0}
     second:
       serializedVersion: 2
@@ -12893,6 +13732,26 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 2147483649
   - first: {x: 19, y: 11, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
+  - first: {x: 26, y: 11, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
+  - first: {x: 27, y: 11, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -12942,6 +13801,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 2147483649
+  - first: {x: 41, y: 13, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
+  - first: {x: 42, y: 13, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
   - first: {x: 46, y: 13, z: 0}
     second:
       serializedVersion: 2
@@ -12953,6 +13832,26 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 2147483649
   - first: {x: 19, y: 14, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
+  - first: {x: 41, y: 14, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
+  - first: {x: 42, y: 14, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -13002,6 +13901,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 2147483649
+  - first: {x: 23, y: 16, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
+  - first: {x: 24, y: 16, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
   - first: {x: 46, y: 16, z: 0}
     second:
       serializedVersion: 2
@@ -13013,6 +13932,26 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 2147483649
   - first: {x: 19, y: 17, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
+  - first: {x: 23, y: 17, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 2147483649
+  - first: {x: 24, y: 17, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -13334,7 +14273,7 @@ Tilemap:
       m_AllTileFlags: 2147483649
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 210
+  - m_RefCount: 222
     m_Data: {fileID: 11400000, guid: 35d74584d3989f94b8f97a5a0d25ac5e, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -13343,7 +14282,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 210
+  - m_RefCount: 222
     m_Data: {fileID: -8818296366847109415, guid: 1599163e5df335f9e8e2dd3b0a5de5fe, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -13352,7 +14291,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 210
+  - m_RefCount: 222
     m_Data:
       e00: 1
       e01: 0
@@ -13443,7 +14382,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 210
+  - m_RefCount: 222
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -13530,6 +14469,14 @@ CompositeCollider2D:
         Y: 256000000
       - X: 319999968
         Y: 256000000
+    - - X: 496000000
+        Y: 319999968
+      - X: 464000000
+        Y: 319999968
+      - X: 464000000
+        Y: 304000000
+      - X: 496000000
+        Y: 304000000
     - - X: 463999968
         Y: 319999968
       - X: 416000032
@@ -13554,14 +14501,6 @@ CompositeCollider2D:
         Y: 304000000
       - X: 336000000
         Y: 304000000
-    - - X: 496000000
-        Y: 319999968
-      - X: 464000000
-        Y: 319999968
-      - X: 464000000
-        Y: 304000000
-      - X: 496000000
-        Y: 304000000
     - - X: 383999968
         Y: 319999968
       - X: 336000032
@@ -13570,14 +14509,22 @@ CompositeCollider2D:
         Y: 304000000
       - X: 383999968
         Y: 304000000
-    - - X: 752000064
-        Y: 255999984
-      - X: 736000000
-        Y: 255999984
-      - X: 736000000
-        Y: 240000000
-      - X: 752000064
-        Y: 240000000
+    - - X: 383999968
+        Y: 288000000
+      - X: 368000000
+        Y: 288000000
+      - X: 368000000
+        Y: 256000000
+      - X: 383999968
+        Y: 256000000
+    - - X: 400000000
+        Y: 288000000
+      - X: 384000000
+        Y: 288000000
+      - X: 384000000
+        Y: 256000000
+      - X: 400000000
+        Y: 256000000
     - - X: 319999968
         Y: 255999984
       - X: 304000000
@@ -13587,13 +14534,13 @@ CompositeCollider2D:
       - X: 319999968
         Y: 240000000
     - - X: 752000064
-        Y: 239999984
+        Y: 255999984
       - X: 736000000
-        Y: 239999984
+        Y: 255999984
       - X: 736000000
-        Y: 208000016
+        Y: 240000000
       - X: 752000064
-        Y: 208000016
+        Y: 240000000
     - - X: 319999968
         Y: 239999984
       - X: 304000000
@@ -13601,6 +14548,22 @@ CompositeCollider2D:
       - X: 304000000
         Y: 208000016
       - X: 319999968
+        Y: 208000016
+    - - X: 752000064
+        Y: 239999984
+      - X: 736000000
+        Y: 239999984
+      - X: 736000000
+        Y: 208000016
+      - X: 752000064
+        Y: 208000016
+    - - X: 688000128
+        Y: 239999984
+      - X: 656000000
+        Y: 239999984
+      - X: 656000000
+        Y: 208000016
+      - X: 688000128
         Y: 208000016
     - - X: 752000064
         Y: 208000000
@@ -13618,6 +14581,22 @@ CompositeCollider2D:
         Y: 192000000
       - X: 319999968
         Y: 192000000
+    - - X: 448000000
+        Y: 191999984
+      - X: 416000032
+        Y: 191999984
+      - X: 416000032
+        Y: 176000000
+      - X: 448000000
+        Y: 176000000
+    - - X: 319999968
+        Y: 191999984
+      - X: 304000000
+        Y: 191999984
+      - X: 304000000
+        Y: 176000000
+      - X: 319999968
+        Y: 176000000
     - - X: 752000064
         Y: 191999984
       - X: 736000000
@@ -13626,22 +14605,6 @@ CompositeCollider2D:
         Y: 176000000
       - X: 752000064
         Y: 176000000
-    - - X: 319999968
-        Y: 191999984
-      - X: 304000000
-        Y: 191999984
-      - X: 304000000
-        Y: 176000000
-      - X: 319999968
-        Y: 176000000
-    - - X: 319999968
-        Y: 175999984
-      - X: 304000000
-        Y: 175999984
-      - X: 304000000
-        Y: 128000000
-      - X: 319999968
-        Y: 128000000
     - - X: 560000000
         Y: 128000000
       - X: 752000064
@@ -13658,6 +14621,38 @@ CompositeCollider2D:
         Y: 16000001
       - X: 560000000
         Y: 16000001
+    - - X: 448000000
+        Y: 175999984
+      - X: 416000032
+        Y: 175999984
+      - X: 416000032
+        Y: 159999984
+      - X: 448000000
+        Y: 159999984
+    - - X: 319999968
+        Y: 175999984
+      - X: 304000000
+        Y: 175999984
+      - X: 304000000
+        Y: 128000000
+      - X: 319999968
+        Y: 128000000
+    - - X: 496000000
+        Y: 144000000
+      - X: 464000000
+        Y: 144000000
+      - X: 464000000
+        Y: 128000000
+      - X: 496000000
+        Y: 128000000
+    - - X: 463999968
+        Y: 144000000
+      - X: 416000032
+        Y: 144000000
+      - X: 416000032
+        Y: 128000000
+      - X: 463999968
+        Y: 128000000
     - - X: 416000000
         Y: 144000000
       - X: 384000000
@@ -13674,30 +14669,6 @@ CompositeCollider2D:
         Y: 128000000
       - X: 336000000
         Y: 128000000
-    - - X: 383999968
-        Y: 144000000
-      - X: 336000032
-        Y: 144000000
-      - X: 336000032
-        Y: 128000000
-      - X: 383999968
-        Y: 128000000
-    - - X: 463999968
-        Y: 144000000
-      - X: 416000032
-        Y: 144000000
-      - X: 416000032
-        Y: 128000000
-      - X: 463999968
-        Y: 128000000
-    - - X: 496000000
-        Y: 144000000
-      - X: 464000000
-        Y: 144000000
-      - X: 464000000
-        Y: 128000000
-      - X: 496000000
-        Y: 128000000
     - - X: 512000000
         Y: 144000000
       - X: 496000032
@@ -13706,34 +14677,38 @@ CompositeCollider2D:
         Y: 16000001
       - X: 512000000
         Y: 16000001
-    - - X: 319999968
-        Y: 16000000
-      - X: 256000000
-        Y: 16000000
-      - X: 256000000
-        Y: 0
-      - X: 319999968
-        Y: 0
-    - - X: 336000000
-        Y: 16000000
-      - X: 320000000
-        Y: 16000000
-      - X: 320000000
-        Y: 0
-      - X: 336000000
-        Y: 0
     - - X: 383999968
-        Y: 16000000
+        Y: 144000000
       - X: 336000032
-        Y: 16000000
+        Y: 144000000
       - X: 336000032
-        Y: 0
-      - X: 368000000
-        Y: 0
-      - X: 368000000
-        Y: -16000000
+        Y: 128000000
       - X: 383999968
-        Y: -16000000
+        Y: 128000000
+    - - X: 512000000
+        Y: 16000000
+      - X: 496000032
+        Y: 16000000
+      - X: 496000032
+        Y: 0
+      - X: 512000000
+        Y: 0
+    - - X: 496000000
+        Y: 16000000
+      - X: 464000000
+        Y: 16000000
+      - X: 464000000
+        Y: 0
+      - X: 496000000
+        Y: 0
+    - - X: 255999984
+        Y: 16000000
+      - X: 240000000
+        Y: 16000000
+      - X: 240000000
+        Y: 0
+      - X: 255999984
+        Y: 0
     - - X: 448000000
         Y: 0
       - X: 463999968
@@ -13746,29 +14721,25 @@ CompositeCollider2D:
         Y: -16000000
       - X: 448000000
         Y: -16000000
-    - - X: 512000000
+    - - X: 383999968
         Y: 16000000
-      - X: 496000032
+      - X: 336000032
         Y: 16000000
-      - X: 496000032
+      - X: 336000032
         Y: 0
-      - X: 512000000
+      - X: 368000000
         Y: 0
-    - - X: 239999984
+      - X: 368000000
+        Y: -16000000
+      - X: 383999968
+        Y: -16000000
+    - - X: 319999968
         Y: 16000000
-      - X: 208000016
+      - X: 256000000
         Y: 16000000
-      - X: 208000016
+      - X: 256000000
         Y: 0
-      - X: 239999984
-        Y: 0
-    - - X: 255999984
-        Y: 16000000
-      - X: 240000000
-        Y: 16000000
-      - X: 240000000
-        Y: 0
-      - X: 255999984
+      - X: 319999968
         Y: 0
     - - X: 624000000
         Y: 16000000
@@ -13782,13 +14753,13 @@ CompositeCollider2D:
         Y: -16000000
       - X: 624000000
         Y: -16000000
-    - - X: 496000000
+    - - X: 239999984
         Y: 16000000
-      - X: 464000000
+      - X: 208000016
         Y: 16000000
-      - X: 464000000
+      - X: 208000016
         Y: 0
-      - X: 496000000
+      - X: 239999984
         Y: 0
     - - X: 208000000
         Y: 16000000
@@ -13798,6 +14769,14 @@ CompositeCollider2D:
         Y: -16000000
       - X: 208000000
         Y: -16000000
+    - - X: 336000000
+        Y: 16000000
+      - X: 320000000
+        Y: 16000000
+      - X: 320000000
+        Y: 0
+      - X: 336000000
+        Y: 0
     - - X: 128000000
         Y: 0
       - X: 16000001
@@ -14076,6 +15055,18 @@ CompositeCollider2D:
       - {x: 54.4, y: 14.399971}
       - {x: 54.400032, y: 0}
       - {x: 60.8, y: -0.0000294}
+    - - {x: 39.999973, y: 25.6}
+      - {x: 39.999973, y: 28.800001}
+      - {x: 36.8, y: 28.79997}
+      - {x: 36.80003, y: 25.6}
+    - - {x: 68.79998, y: 20.800001}
+      - {x: 68.79998, y: 23.999998}
+      - {x: 65.6, y: 23.99997}
+      - {x: 65.60003, y: 20.800001}
+    - - {x: 44.799973, y: 15.999999}
+      - {x: 44.799973, y: 19.199999}
+      - {x: 41.600002, y: 19.19997}
+      - {x: 41.600033, y: 15.999999}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -14161,158 +15152,6 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!1 &1463275728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1463275730}
-  - component: {fileID: 1463275729}
-  - component: {fileID: 1463275731}
-  - component: {fileID: 1463275732}
-  m_Layer: 0
-  m_Name: Bala_prueba
-  m_TagString: Bullet
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1463275729
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463275728}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1463275730
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463275728}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.92, y: 0.16, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1463275731
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463275728}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
---- !u!58 &1463275732
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463275728}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
 --- !u!1 &1509121664
 GameObject:
   m_ObjectHideFlags: 0
@@ -14325,9 +15164,10 @@ GameObject:
   - component: {fileID: 1509121666}
   - component: {fileID: 1509121668}
   - component: {fileID: 1509121667}
+  - component: {fileID: 1509121669}
   m_Layer: 0
   m_Name: Cuerpo_3_1
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14440,6 +15280,43 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &1509121669
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509121664}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0000009536743, y: 0.0000038146973}
+  m_Size: {x: 0.64000016, y: 1.0200002}
+  m_Direction: 0
 --- !u!1 &1632516641
 GameObject:
   m_ObjectHideFlags: 0
@@ -14452,9 +15329,11 @@ GameObject:
   - component: {fileID: 1632516643}
   - component: {fileID: 1632516645}
   - component: {fileID: 1632516644}
+  - component: {fileID: 1632516646}
+  - component: {fileID: 1632516647}
   m_Layer: 0
   m_Name: Cuerpo_1_4
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusanoGema
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14567,6 +15446,59 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &1632516646
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632516641}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0000009536743, y: 0.0000019073486}
+  m_Size: {x: 0.94000024, y: 1.3800004}
+  m_Direction: 0
+--- !u!114 &1632516647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632516641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c07455ae37ed336ba3a629f08f9bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VidaMaxima: 1
+  CuerpoGusanoDestruido: {fileID: 0}
+  derrotado: 0
+  contado: 0
 --- !u!1 &1692716598
 GameObject:
   m_ObjectHideFlags: 0
@@ -14619,7 +15551,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.8099718, y: -1.0720196}
+  m_Offset: {x: 0.80997086, y: -0.94495916}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -14629,7 +15561,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 41.879723, y: 16.198872}
+  m_Size: {x: 41.879723, y: 15.944751}
   m_EdgeRadius: 0
 --- !u!4 &1692716600
 Transform:
@@ -14660,6 +15592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camara: {fileID: 1347772079}
   agent: {fileID: 1707025047}
+  pared_inv: {fileID: 145447881}
 --- !u!1 &1707025043
 GameObject:
   m_ObjectHideFlags: 0
@@ -14673,6 +15606,7 @@ GameObject:
   - component: {fileID: 1707025046}
   - component: {fileID: 1707025047}
   - component: {fileID: 1707025048}
+  - component: {fileID: 1707025049}
   m_Layer: 0
   m_Name: Cabeza
   m_TagString: Cabeza
@@ -14810,6 +15744,121 @@ MonoBehaviour:
   agent: {fileID: 1707025047}
   agentTransform: {fileID: 1707025044}
   target: {fileID: 2097084755}
+--- !u!60 &1707025049
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707025043}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.86, y: 3.69}
+    newSize: {x: 1.91, y: 3.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.78999996, y: -1.7149999}
+      - {x: 0.87, y: -1.545}
+      - {x: 0.88, y: -1.4649999}
+      - {x: 0.93, y: -1.4549999}
+      - {x: 0.93, y: -1.305}
+      - {x: 0.91999996, y: -1.265}
+      - {x: 0.88, y: -1.145}
+      - {x: 0.89, y: -1.0849999}
+      - {x: 0.88, y: -0.995}
+      - {x: 0.78999996, y: -0.805}
+      - {x: 0.78999996, y: -0.655}
+      - {x: 0.77, y: -0.59499997}
+      - {x: 0.7, y: -0.45499998}
+      - {x: 0.53999996, y: -0.255}
+      - {x: 0.52, y: -0.145}
+      - {x: 0.45999998, y: 0.044999998}
+      - {x: 0.42, y: 0.285}
+      - {x: 0.38, y: 0.33499998}
+      - {x: 0.35999998, y: 0.405}
+      - {x: 0.35, y: 0.545}
+      - {x: 0.32, y: 0.635}
+      - {x: 0.29, y: 0.885}
+      - {x: 0.25, y: 0.945}
+      - {x: 0.22999999, y: 1.0649999}
+      - {x: 0.21, y: 1.115}
+      - {x: 0.14999999, y: 1.395}
+      - {x: 0.08, y: 1.4549999}
+      - {x: 0.06, y: 1.7049999}
+      - {x: 0.04, y: 1.8149999}
+      - {x: 0, y: 1.8449999}
+      - {x: -0.06, y: 1.8449999}
+      - {x: -0.099999994, y: 1.785}
+      - {x: -0.13, y: 1.635}
+      - {x: -0.14, y: 1.485}
+      - {x: -0.19999999, y: 1.355}
+      - {x: -0.17999999, y: 1.275}
+      - {x: -0.26, y: 1.185}
+      - {x: -0.34, y: 0.84499997}
+      - {x: -0.34, y: 0.715}
+      - {x: -0.29999998, y: 0.66499996}
+      - {x: -0.39, y: 0.585}
+      - {x: -0.5, y: 0.155}
+      - {x: -0.5, y: 0.085}
+      - {x: -0.48999998, y: -0.005}
+      - {x: -0.55, y: -0.085}
+      - {x: -0.57, y: -0.185}
+      - {x: -0.64, y: -0.355}
+      - {x: -0.71999997, y: -0.45499998}
+      - {x: -0.81, y: -0.655}
+      - {x: -0.82, y: -0.805}
+      - {x: -0.93, y: -1.035}
+      - {x: -0.9, y: -1.105}
+      - {x: -0.9, y: -1.175}
+      - {x: -0.93, y: -1.285}
+      - {x: -0.93, y: -1.4449999}
+      - {x: -0.90999997, y: -1.4549999}
+      - {x: -0.85999995, y: -1.475}
+      - {x: -0.85999995, y: -1.5849999}
+      - {x: -0.78999996, y: -1.7149999}
+      - {x: -0.68, y: -1.6949999}
+      - {x: -0.5, y: -1.635}
+      - {x: -0.37, y: -1.625}
+      - {x: -0.16, y: -1.8149999}
+      - {x: -0.08, y: -1.8449999}
+      - {x: 0.14, y: -1.8449999}
+      - {x: 0.37, y: -1.645}
+      - {x: 0.5, y: -1.635}
+      - {x: 0.68, y: -1.6949999}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1724437322
 GameObject:
   m_ObjectHideFlags: 0
@@ -14822,9 +15871,10 @@ GameObject:
   - component: {fileID: 1724437324}
   - component: {fileID: 1724437326}
   - component: {fileID: 1724437325}
+  - component: {fileID: 1724437327}
   m_Layer: 0
   m_Name: Cuerpo_1_1
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14937,6 +15987,136 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &1724437327
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724437322}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0000009536743, y: 0}
+  m_Size: {x: 0.94000024, y: 1.3800004}
+  m_Direction: 0
+--- !u!1 &1826753514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1826753517}
+  - component: {fileID: 1826753516}
+  - component: {fileID: 1826753515}
+  m_Layer: 0
+  m_Name: ParedInvisibleBichos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1826753515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826753514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9621e5243e7d57025bd6a945e633defe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemigo_1: Lobo_1
+  Enemigo_2: Lobo_2
+--- !u!61 &1826753516
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826753514}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.79641557}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 3.2754722}
+  m_EdgeRadius: 0
+--- !u!4 &1826753517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826753514}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37.3, y: -5.6095943, z: 0.6017326}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849534607
 GameObject:
   m_ObjectHideFlags: 0
@@ -14995,9 +16175,10 @@ GameObject:
   - component: {fileID: 1869821786}
   - component: {fileID: 1869821788}
   - component: {fileID: 1869821787}
+  - component: {fileID: 1869821789}
   m_Layer: 0
   m_Name: Cuerpo_2_1
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15110,6 +16291,43 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &1869821789
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869821784}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0000009536743, y: 0.0000038146973}
+  m_Size: {x: 0.8000002, y: 1.2200003}
+  m_Direction: 0
 --- !u!1 &1926517199
 GameObject:
   m_ObjectHideFlags: 0
@@ -15122,9 +16340,11 @@ GameObject:
   - component: {fileID: 1926517201}
   - component: {fileID: 1926517203}
   - component: {fileID: 1926517202}
+  - component: {fileID: 1926517204}
+  - component: {fileID: 1926517205}
   m_Layer: 0
   m_Name: Cuerpo_1_7
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusanoGema
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15188,7 +16408,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 13
-  m_Sprite: {fileID: 8417783289277758844, guid: 3d381d5f98fbc2eed9a10c6f62a00816, type: 3}
+  m_Sprite: {fileID: 2796479471543272602, guid: 3d381d5f98fbc2eed9a10c6f62a00816, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15237,6 +16457,59 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &1926517204
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926517199}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0000009536743, y: 0.0000038146973}
+  m_Size: {x: 0.94000024, y: 1.3800004}
+  m_Direction: 0
+--- !u!114 &1926517205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926517199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c07455ae37ed336ba3a629f08f9bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VidaMaxima: 1
+  CuerpoGusanoDestruido: {fileID: 0}
+  derrotado: 0
+  contado: 0
 --- !u!1 &1950365402
 GameObject:
   m_ObjectHideFlags: 0
@@ -15264,7 +16537,7 @@ RectTransform:
   m_GameObject: {fileID: 1950365402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0607, y: 2.0607, z: 2.0607}
+  m_LocalScale: {x: 1.587131, y: 1.587131, z: 1.587131}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1239209939}
@@ -15324,9 +16597,10 @@ GameObject:
   - component: {fileID: 1992782466}
   - component: {fileID: 1992782468}
   - component: {fileID: 1992782467}
+  - component: {fileID: 1992782469}
   m_Layer: 0
   m_Name: Cola
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15439,6 +16713,93 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!60 &1992782469
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992782464}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.44, y: 2.36}
+    newSize: {x: 2.36, y: 1.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.71999997, y: -0.52}
+      - {x: 0.65, y: -0.26}
+      - {x: 0.71999997, y: -0.14}
+      - {x: 0.71999997, y: -0.049999997}
+      - {x: 0.59, y: 0.14}
+      - {x: 0.56, y: 0.41}
+      - {x: 0.52, y: 0.37}
+      - {x: 0.31, y: 0.42}
+      - {x: 0.25, y: 0.59}
+      - {x: 0.26999998, y: 0.87}
+      - {x: 0.25, y: 1.03}
+      - {x: 0.21, y: 1.11}
+      - {x: 0.099999994, y: 1.18}
+      - {x: -0.099999994, y: 1.18}
+      - {x: -0.22, y: 1.09}
+      - {x: -0.26, y: 0.96999997}
+      - {x: -0.25, y: 0.84}
+      - {x: -0.24, y: 0.56}
+      - {x: -0.32999998, y: 0.39999998}
+      - {x: -0.55, y: 0.37}
+      - {x: -0.57, y: 0.35999998}
+      - {x: -0.59, y: 0.049999997}
+      - {x: -0.71999997, y: -0.04}
+      - {x: -0.71999997, y: -0.21}
+      - {x: -0.66999996, y: -0.42999998}
+      - {x: -0.71999997, y: -0.53999996}
+      - {x: -0.71999997, y: -0.55}
+      - {x: -0.69, y: -0.61}
+      - {x: -0.51, y: -0.77}
+      - {x: -0.52, y: -0.94}
+      - {x: -0.52, y: -0.96}
+      - {x: -0.48999998, y: -0.98999995}
+      - {x: -0.45999998, y: -0.98999995}
+      - {x: -0.26, y: -1.05}
+      - {x: -0.17999999, y: -1.18}
+      - {x: 0.24, y: -1.18}
+      - {x: 0.26, y: -1.17}
+      - {x: 0.53999996, y: -0.97999996}
+      - {x: 0.53, y: -0.76}
+      - {x: 0.69, y: -0.59999996}
+  m_UseDelaunayMesh: 0
 --- !u!1 &2030402211
 GameObject:
   m_ObjectHideFlags: 0
@@ -15668,7 +17029,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c07455ae37ed336ba3a629f08f9bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VidaMaxima: 5
+  VidaMaxima: 1
+  CuerpoGusanoDestruido: {fileID: 0}
+  derrotado: 0
+  contado: 0
 --- !u!1 &2031454222
 GameObject:
   m_ObjectHideFlags: 0
@@ -15681,9 +17045,11 @@ GameObject:
   - component: {fileID: 2031454224}
   - component: {fileID: 2031454226}
   - component: {fileID: 2031454225}
+  - component: {fileID: 2031454227}
+  - component: {fileID: 2031454228}
   m_Layer: 0
   m_Name: Cuerpo_1_2
-  m_TagString: Enemigo
+  m_TagString: CuerpoGusanoGema
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15796,6 +17162,59 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!70 &2031454227
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031454222}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.94000024, y: 1.3800004}
+  m_Direction: 0
+--- !u!114 &2031454228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031454222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c07455ae37ed336ba3a629f08f9bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VidaMaxima: 1
+  CuerpoGusanoDestruido: {fileID: 0}
+  derrotado: 0
+  contado: 0
 --- !u!1 &2097084751
 GameObject:
   m_ObjectHideFlags: 0
@@ -15908,7 +17327,7 @@ Transform:
   m_GameObject: {fileID: 2097084751}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.49, y: -5.93, z: 0}
+  m_LocalPosition: {x: 52.57, y: 11.55, z: 0}
   m_LocalScale: {x: 0.6805577, y: 0.6805577, z: 0.6805577}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -16018,4 +17437,7 @@ SceneRoots:
   - {fileID: 161921993}
   - {fileID: 283480758}
   - {fileID: 119562358}
-  - {fileID: 1463275730}
+  - {fileID: 1826753517}
+  - {fileID: 1301683173}
+  - {fileID: 145447883}
+  - {fileID: 970943095}
