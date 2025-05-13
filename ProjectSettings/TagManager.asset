@@ -7,6 +7,8 @@ TagManager:
   - Cabeza
   - Enemigo
   - Bullet
+  - CuerpoGusano
+  - CuerpoGusanoGema
   layers:
   - Default
   - TransparentFX

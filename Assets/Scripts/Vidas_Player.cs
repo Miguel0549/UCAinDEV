@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 
 public class Vidas_Player : MonoBehaviour
@@ -23,17 +24,17 @@ public class Vidas_Player : MonoBehaviour
     {
        
         
-        if (collision.gameObject.tag == "Enemigo" || collision.gameObject.tag == "Cabeza" )
+        if (collision.gameObject.tag == "Enemigo" || collision.gameObject.tag == "Cabeza" || collision.gameObject.tag == "CuerpoGusano" || collision.gameObject.tag == "CuerpoGusanoGema" )
         {
             if ( dmg_cd > 0 ) return;
             
-            Debug.Log("Colision");
+  
             Image[] corazon = Corazones.GetComponentsInChildren<Image>();                               
             corazon[contadorVidasPerdidas].sprite = corazon_vacio;                                       
 
             contadorVidasPerdidas++;
             
-            if (contadorVidasPerdidas >= VidaMaxima) Debug.Log("Vidas perdidas");
+            if (contadorVidasPerdidas > VidaMaxima) SceneManager.LoadScene("Menu");
             
             dmg_cd = dmg_delay;
             
