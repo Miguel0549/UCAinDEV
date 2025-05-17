@@ -28,8 +28,6 @@ public class Orb : MonoBehaviour
       Vector3 direction = cursor - origin.position;
       float angle = Mathf.Atan2(direction.y,direction.x);
 
-      Debug.Log(angle);
-
       newpos.x = origin.position.x + Mathf.Cos(angle  ) * radius;
       newpos.y = origin.position.y + Mathf.Sin(angle ) * radius; 
       newpos.z = origin.position.z;
@@ -41,7 +39,7 @@ public class Orb : MonoBehaviour
     {
       if (Input.GetKey(KeyCode.Mouse0)&&Time.fixedTime-lastfire > firerate)
       {
-        Debug.Log("!!FIRE");
+        
         GameObject newproj = Instantiate(projectile,transform.position,Quaternion.identity);
         newproj.GetComponent<Rigidbody2D>().linearVelocity = (Vector2) Vector3.Normalize(cursor-transform.position) * projectileSpeed;
         lastfire = Time.fixedTime;

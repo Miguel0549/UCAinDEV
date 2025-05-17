@@ -3,7 +3,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float TimeToLive = 2.0f;
-    public Collider2D OwnerCollider,ProjectileCollider; 
+    public Collider2D ProjectileCollider; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,8 +18,9 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter()
+    void OnTriggerEnter2D( Collider2D collision )
     {
-        Destroy(this);
+       
+        if ( collision.gameObject.tag != "Alerta") Destroy(this.gameObject);
     }
 }

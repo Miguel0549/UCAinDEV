@@ -3,9 +3,9 @@ using UnityEngine.AI;
 
 public class AlertaBichos : MonoBehaviour
 {
+    
     public NavMeshAgent Lobo_1;
 	public NavMeshAgent Lobo_2;
-    
     
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -13,6 +13,16 @@ public class AlertaBichos : MonoBehaviour
         
         if (collision.gameObject.tag == "Player")
         {
+
+			/*
+			for ( int i=0 ; i< Lobos.size() ; i++ )
+			{
+
+				Lobos[i].enabled = true;
+				Lobos[i].SetDestination(collision.gameObject.transform.position);
+
+			}
+			*/
 			Lobo_1.enabled = true;
 			Lobo_2.enabled = true;
 			Lobo_1.SetDestination(collision.gameObject.transform.position);
@@ -36,7 +46,14 @@ public class AlertaBichos : MonoBehaviour
        
         if (collision.gameObject.tag == "Player")
         {
+			/*NavMeshAgent
+			for ( int i=0 ; i< Lobos.size() ; i++ )
+			{
 
+				Lobos[i].enabled = true;
+
+			}
+			*/
 			Lobo_1.enabled = false;
 			Lobo_2.enabled = false;
 			Lobo_1.Warp(new Vector2(34,-11));

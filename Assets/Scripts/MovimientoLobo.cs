@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using System;
 
-public class MovimientoBichos : MonoBehaviour
+public class MovimientoLobo : MonoBehaviour
 {
 	public BoxCollider2D collider_player;
 	public BoxCollider2D collider_lobo;

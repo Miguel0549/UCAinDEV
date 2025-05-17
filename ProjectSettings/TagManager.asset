@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - CuerpoGusano
   - CuerpoGusanoGema
+  - Alerta
   layers:
   - Default
   - TransparentFX

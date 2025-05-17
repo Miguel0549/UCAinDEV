@@ -3,18 +3,20 @@ using UnityEngine.AI;
 
 public class MovimientoCabeza : MonoBehaviour
 {
+
     public Camera camara;
     public NavMeshAgent agent;
-    public GameObject pared_inv;
+    public Collider2D pared_inv;
 
     void Start()
     {
-        pared_inv.SetActive(false);
+        pared_inv.enabled = false;
     }
     
     void OnTriggerEnter2D(Collider2D collision)
     {
-        pared_inv.SetActive(true);
+        pared_inv.enabled = true;
+        camara.farClipPlane = 2000;
     }
     
     void OnTriggerStay2D(Collider2D collision)

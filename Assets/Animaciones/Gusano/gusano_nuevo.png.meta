@@ -158,101 +158,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cabeza_1
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 759
-        width: 372
-        height: 186
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e5bf70f6051bf44f8bc303f1c5cf5be
-      internalID: 789679332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: anilla1_1
-      rect:
-        serializedVersion: 2
-        x: 407
-        y: 796
-        width: 156
-        height: 144
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7138d5f88900554194e74689efadaca
-      internalID: -797847873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cabeza_2
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 555
-        width: 372
-        height: 191
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a21786b02869f3248a0d34318fc807d7
-      internalID: -870306288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: anillo1_2
-      rect:
-        serializedVersion: 2
-        x: 407
-        y: 638
-        width: 156
-        height: 144
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 207bdbf43426f3b4d94ac236f72c433f
-      internalID: 187279303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: cola
       rect:
         serializedVersion: 2
-        x: 2
-        y: 315
-        width: 236
-        height: 236
+        x: 106
+        y: 447
+        width: 80
+        height: 122
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +183,10 @@ TextureImporter:
       name: anillo2b_muerto
       rect:
         serializedVersion: 2
-        x: 248
-        y: 421
-        width: 138
-        height: 124
+        x: 218
+        y: 447
+        width: 80
+        height: 122
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +205,10 @@ TextureImporter:
       name: anillo1_muerto
       rect:
         serializedVersion: 2
-        x: 407
-        y: 480
-        width: 156
-        height: 144
+        x: 555
+        y: 201
+        width: 191
+        height: 360
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +227,10 @@ TextureImporter:
       name: anillo2_muerto
       rect:
         serializedVersion: 2
-        x: 248
-        y: 283
-        width: 138
-        height: 124
+        x: 233
+        y: 339
+        width: 64
+        height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +249,10 @@ TextureImporter:
       name: anillo2b_2
       rect:
         serializedVersion: 2
-        x: 406
-        y: 342
-        width: 138
-        height: 124
+        x: 361
+        y: 336
+        width: 144
+        height: 236
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,10 +271,10 @@ TextureImporter:
       name: anillo3
       rect:
         serializedVersion: 2
-        x: 5
-        y: 203
-        width: 122
-        height: 109
+        x: 22
+        y: 188
+        width: 94
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +293,10 @@ TextureImporter:
       name: anillo4
       rect:
         serializedVersion: 2
-        x: 133
-        y: 221
-        width: 102
-        height: 88
+        x: 160
+        y: 188
+        width: 94
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,10 +315,10 @@ TextureImporter:
       name: anillo2b_1
       rect:
         serializedVersion: 2
-        x: 248
-        y: 145
-        width: 138
-        height: 124
+        x: 298
+        y: 188
+        width: 94
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,10 +337,10 @@ TextureImporter:
       name: anillo2_2
       rect:
         serializedVersion: 2
-        x: 406
-        y: 204
-        width: 138
-        height: 124
+        x: 436
+        y: 188
+        width: 94
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,57 +356,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anillo3_muerto
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 91
-        width: 122
-        height: 109
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31cafd523e1d4404cabea7522c85c822
-      internalID: 377877706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: anillo4_muerto
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 123
-        width: 102
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80fc4cc1336f9a7499387064d3394f18
-      internalID: 198533107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: anillo2_1
       rect:
         serializedVersion: 2
-        x: 248
-        y: 7
-        width: 138
-        height: 124
+        x: 219
+        y: 30
+        width: 94
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,6 +373,138 @@ TextureImporter:
       bones: []
       spriteID: b048727e7f04b114480c70cdd7530dc2
       internalID: -459436783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_nuevo_0
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 189
+        width: 186
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e4f30d5f70d0ccb9287729fe3dedf8
+      internalID: 1367615359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_nuevo_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 339
+        width: 64
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04199b5ada81f210987246f2128cc565
+      internalID: -255391711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_nuevo_2
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 30
+        width: 94
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30660f360df59642b2c3c84bc61e68f
+      internalID: -919264160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_nuevo_3
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 11
+        width: 110
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546b564f20811fd1c9b957b47340523c
+      internalID: -1091524280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_nuevo_4
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 11
+        width: 110
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8855b2a17cf6f8f819ea3c8620b1c238
+      internalID: 338897352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gusano_nuevo_5
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 11
+        width: 110
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af99be3c7172ee73d90bc2241174b31a
+      internalID: 1177677149
       vertices: []
       indices: 
       edges: []
@@ -539,6 +539,12 @@ TextureImporter:
       cabeza_1: 789679332
       cabeza_2: -870306288
       cola: -968926278
+      gusano_nuevo_0: 1367615359
+      gusano_nuevo_1: -255391711
+      gusano_nuevo_2: -919264160
+      gusano_nuevo_3: -1091524280
+      gusano_nuevo_4: 338897352
+      gusano_nuevo_5: 1177677149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
