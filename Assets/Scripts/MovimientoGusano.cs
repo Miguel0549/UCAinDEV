@@ -17,26 +17,12 @@ public class MovimientoGusano : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
     }
-
-    public Vector2 AgentVelocityToVector2DInput(UnityEngine.AI.NavMeshAgent agent)
-    {
-        float xValue;
-        float yValue;
-        // Get the NavMeshAgent's desired velocity direction relative from it's actual position
-        Vector3 desiredVelocityRelativeToAgent = agent.transform.InverseTransformDirection(agent.desiredVelocity);
-        // Normalize the vector so it doesn't have a magnitude beyond 1.0f
-        desiredVelocityRelativeToAgent.Normalize();
-        // X value will be the X value of the vector
-        xValue = desiredVelocityRelativeToAgent.x;
-        // Y value will be the Z value of the vector
-        yValue = desiredVelocityRelativeToAgent.z;
-        // It's worth noting that you should scale this 2D vector by a desired speed on a scale of 0 - 1
-        return new Vector2(xValue, yValue);
-    }
     
     // Update is called once per frame
     void FixedUpdate()
     {
+
+	    agent.enabled = agent_cabeza.enabled;
         
 		if ( agent_cabeza.enabled == true )
 		{
@@ -46,18 +32,13 @@ public class MovimientoGusano : MonoBehaviour
         	if (movement != Vector2.zero)
         	{
           	  Quaternion to_rotation = Quaternion.LookRotation(Vector3.forward,movement);
-           	 agentTransform.rotation = Quaternion.RotateTowards( agentTransform.rotation, to_rotation, rotationSpeed * Time.deltaTime );
+           	  agentTransform.rotation = Quaternion.RotateTowards( agentTransform.rotation, to_rotation, rotationSpeed * Time.deltaTime );
         	}
 
 		}
 
-        if (this.tag != "Cabeza")
-        {
-            agent.enabled = agent_cabeza.enabled;
-            agent.SetDestination(target.position);
-        }
-        
-            
+		agent.SetDestination(target.position);
+
     }
     
     

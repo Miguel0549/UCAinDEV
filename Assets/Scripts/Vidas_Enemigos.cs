@@ -31,10 +31,10 @@ public class VidasEnemigos : MonoBehaviour
 			
 			derrotado = true;
 			if ( this.tag == "CuerpoGusanoGema" ) SprR.sprite = CuerpoGusanoDestruido;	
-			else if ( this.tag == "Enemigo" ) 
+			else if ( this.tag == "Enemigo" )
 			{
-			
-				//vector_lobos.Lobos[indice_lobo] = null;
+
+				DatosGlobales.Lobos.Remove(this.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>());
 				Destroy(this.gameObject);
 			}
 			

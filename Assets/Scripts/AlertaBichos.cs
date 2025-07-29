@@ -1,72 +1,67 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections.Generic;
+using System.Linq;
 
 public class AlertaBichos : MonoBehaviour
 {
-    
-    public NavMeshAgent Lobo_1;
-	public NavMeshAgent Lobo_2;
-    
+
+	void Start(){
+
+		DatosGlobales.Lobos = FindObjectsOfType<NavMeshAgent>()
+            .Where(agent => agent.gameObject.name.StartsWith("Lobo"))
+            .ToList();
+
+	}
+
+
     void OnTriggerStay2D(Collider2D collision)
     {
         
-        
-        if (collision.gameObject.tag == "Player")
-        {
+		if ( DatosGlobales.Lobos.Count != 0 ){
 
-			/*
-			for ( int i=0 ; i< Lobos.size() ; i++ )
-			{
+			if (collision.gameObject.tag == "Player"){
+		
+				foreach ( NavMeshAgent Lobo in DatosGlobales.Lobos )
+				{
 
-				Lobos[i].enabled = true;
-				Lobos[i].SetDestination(collision.gameObject.transform.position);
+					Lobo.enabled = true;
+					Lobo.SetDestination(collision.gameObject.transform.position);
 
-			}
-			*/
-			Lobo_1.enabled = true;
-			Lobo_2.enabled = true;
-			Lobo_1.SetDestination(collision.gameObject.transform.position);
-			Lobo_2.SetDestination(collision.gameObject.transform.position);
+				}
 
-			/*
-			foreach (NavMeshAgent child in Lobo.GetComponentsInChildren<NavMeshAgent>())
-			{
-				child.enabled = true;
-            	child.SetDestination(collision.gameObject.transform.position);
 
-			}
-			*/
+            }
 
-        }
+		}
+       
+      
         
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
+
+		if ( DatosGlobales.Lobos.Count != 0 ){
+
+			if (collision.gameObject.tag == "Player")
+			{
+
+				int x = 34, y = -11;
+			
+				foreach ( NavMeshAgent Lobo in DatosGlobales.Lobos )
+				{
+
+					Lobo.enabled = false;
+					Lobo.Warp(new Vector2(x,y));
+					x = x - 11;
+					y = y + 10;
+				}
+	
+            }
+
+		}
        
-        if (collision.gameObject.tag == "Player")
-        {
-			/*NavMeshAgent
-			for ( int i=0 ; i< Lobos.size() ; i++ )
-			{
-
-				Lobos[i].enabled = true;
-
-			}
-			*/
-			Lobo_1.enabled = false;
-			Lobo_2.enabled = false;
-			Lobo_1.Warp(new Vector2(34,-11));
-			Lobo_2.Warp(new Vector2(23,-1));
-
-			/*
-			foreach (NavMeshAgent child in Lobo.GetComponentsInChildren<NavMeshAgent>())
-			{
-				child.enabled = false;
-				//child.Warp(new Vector3()):
-
-			}
-            */
-        }
+        
     }
 }
