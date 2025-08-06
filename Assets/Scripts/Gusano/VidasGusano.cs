@@ -11,6 +11,7 @@ public class VidasGusano : MonoBehaviour
     void Start()
     {
         cuerpos = GetComponentsInChildren<VidasEnemigos>();
+        DatosGlobales.cuerpos_derrotados = 0;
     }
     
     void FixedUpdate()
@@ -20,13 +21,11 @@ public class VidasGusano : MonoBehaviour
         {
             if (cuerpos[i].derrotado == true && cuerpos[i].contado == false)
             {
-                cuerpos_derrotados++;
+                DatosGlobales.cuerpos_derrotados++;
                 cuerpos[i].contado = true;
             }
         }
-        
-        Debug.Log(cuerpos_derrotados);
-        if ( cuerpos_derrotados >= n_cuerpos ) SceneManager.LoadScene("Menu");
+        if ( DatosGlobales.cuerpos_derrotados >= n_cuerpos ) SceneManager.LoadScene("Menu");
        
     }
 }

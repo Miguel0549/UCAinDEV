@@ -133,7 +133,9 @@ GameObject:
   - component: {fileID: 8983069}
   - component: {fileID: 8983071}
   - component: {fileID: 8983072}
-  m_Layer: 0
+  - component: {fileID: 8983073}
+  - component: {fileID: 8983074}
+  m_Layer: 8
   m_Name: Cuerpo_1_6
   m_TagString: CuerpoGusanoGema
   m_Icon: {fileID: 0}
@@ -247,7 +249,7 @@ NavMeshAgent:
   m_Height: 1.1000001
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &8983071
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -304,6 +306,123 @@ MonoBehaviour:
   vector_lobos: {fileID: 0}
   indice_lobo: 0
   script_lobos: []
+--- !u!114 &8983073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8983066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &8983074
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8983066}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!1 &39221261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 39221263}
+  - component: {fileID: 39221262}
+  m_Layer: 0
+  m_Name: ParedInvisibleBoss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &39221262
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39221261}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.19814491, y: 0.20747614}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.1672554, y: 1.4149523}
+  m_EdgeRadius: 0
+--- !u!4 &39221263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39221261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 52.6, y: 13.24, z: -0.032010682}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &75470974
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +436,9 @@ GameObject:
   - component: {fileID: 75470978}
   - component: {fileID: 75470977}
   - component: {fileID: 75470979}
-  m_Layer: 0
+  - component: {fileID: 75470980}
+  - component: {fileID: 75470981}
+  m_Layer: 8
   m_Name: Cuerpo_3_4
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -431,7 +552,7 @@ NavMeshAgent:
   m_Height: 0.64
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &75470979
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -469,6 +590,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.0000076293945}
   m_Size: {x: 0.64000016, y: 1.0200002}
   m_Direction: 0
+--- !u!114 &75470980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75470974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &75470981
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75470974}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &119562354
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,84 +731,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &145447881
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 145447883}
-  - component: {fileID: 145447882}
-  m_Layer: 0
-  m_Name: ParedInvisibleBoss
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!61 &145447882
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145447881}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.34267044, y: 0.17112303}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 3.2172775, y: 1.340394}
-  m_EdgeRadius: 0
---- !u!4 &145447883
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145447881}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.5, y: 13.49, z: 0.6017326}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161921986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,7 +1098,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.5324669, y: 0.41127014}
+  m_Offset: {x: 0.6724014, y: 0.39907932}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1026,7 +1108,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.6225967, y: 1.0748329}
+  m_Size: {x: 1.760315, y: 1.3614597}
   m_EdgeRadius: 0
 --- !u!1 &252700744
 GameObject:
@@ -1211,7 +1293,9 @@ GameObject:
   - component: {fileID: 385649265}
   - component: {fileID: 385649264}
   - component: {fileID: 385649266}
-  m_Layer: 0
+  - component: {fileID: 385649267}
+  - component: {fileID: 385649268}
+  m_Layer: 8
   m_Name: Cuerpo_2_3
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -1325,7 +1409,7 @@ NavMeshAgent:
   m_Height: 0.8
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &385649266
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1363,6 +1447,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0000009536743, y: 0.0000038146973}
   m_Size: {x: 0.8000002, y: 1.2200003}
   m_Direction: 0
+--- !u!114 &385649267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385649261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &385649268
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385649261}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &393283168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,7 +1500,9 @@ GameObject:
   - component: {fileID: 393283171}
   - component: {fileID: 393283173}
   - component: {fileID: 393283174}
-  m_Layer: 0
+  - component: {fileID: 393283175}
+  - component: {fileID: 393283176}
+  m_Layer: 8
   m_Name: Cuerpo_1_5
   m_TagString: CuerpoGusanoGema
   m_Icon: {fileID: 0}
@@ -1491,7 +1616,7 @@ NavMeshAgent:
   m_Height: 1.1
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &393283173
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1548,6 +1673,45 @@ MonoBehaviour:
   vector_lobos: {fileID: 0}
   indice_lobo: 0
   script_lobos: []
+--- !u!114 &393283175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393283168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &393283176
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393283168}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &442765984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,7 +1725,9 @@ GameObject:
   - component: {fileID: 442765988}
   - component: {fileID: 442765987}
   - component: {fileID: 442765989}
-  m_Layer: 0
+  - component: {fileID: 442765990}
+  - component: {fileID: 442765991}
+  m_Layer: 8
   m_Name: Cuerpo_3_2
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -1675,7 +1841,7 @@ NavMeshAgent:
   m_Height: 0.64
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &442765989
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1713,6 +1879,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.0000038146973}
   m_Size: {x: 0.64000016, y: 1.0200002}
   m_Direction: 0
+--- !u!114 &442765990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442765984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &442765991
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442765984}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &511571046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,7 +1984,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.44010162, y: 0.38560772}
+  m_Offset: {x: 0.45290565, y: 0.36946106}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1789,7 +1994,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.4566727, y: 1.1006145}
+  m_Size: {x: 2.043415, y: 1.6063309}
   m_EdgeRadius: 0
 --- !u!1 &557289896
 GameObject:
@@ -1804,7 +2009,9 @@ GameObject:
   - component: {fileID: 557289900}
   - component: {fileID: 557289899}
   - component: {fileID: 557289901}
-  m_Layer: 0
+  - component: {fileID: 557289902}
+  - component: {fileID: 557289903}
+  m_Layer: 8
   m_Name: Cuerpo_2_4
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -1918,7 +2125,7 @@ NavMeshAgent:
   m_Height: 0.8
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &557289901
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1956,6 +2163,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0000009536743, y: 0}
   m_Size: {x: 0.8000002, y: 1.2200003}
   m_Direction: 0
+--- !u!114 &557289902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557289896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &557289903
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557289896}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &564228597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1969,7 +2215,9 @@ GameObject:
   - component: {fileID: 564228601}
   - component: {fileID: 564228600}
   - component: {fileID: 564228602}
-  m_Layer: 0
+  - component: {fileID: 564228603}
+  - component: {fileID: 564228604}
+  m_Layer: 8
   m_Name: Cuerpo_3_6
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -2083,7 +2331,7 @@ NavMeshAgent:
   m_Height: 0.64
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &564228602
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2121,6 +2369,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.64000016, y: 1.0200002}
   m_Direction: 0
+--- !u!114 &564228603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564228597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &564228604
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564228597}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1001 &628001585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2139,11 +2426,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: b887ac024a03c9d38a99196707d86231, type: 2}
     - target: {fileID: 7357806342494844824, guid: b3c5831623100229584720d0361dd512, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.84
+      value: 52.6
       objectReference: {fileID: 0}
     - target: {fileID: 7357806342494844824, guid: b3c5831623100229584720d0361dd512, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.91
+      value: 10.17
       objectReference: {fileID: 0}
     - target: {fileID: 7357806342494844824, guid: b3c5831623100229584720d0361dd512, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10689,7 +10976,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.2632637, y: 0.23252201}
+  m_Offset: {x: 0.3419094, y: 0.28778267}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10699,7 +10986,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.7062073, y: 1.465044}
+  m_Size: {x: 1.9358559, y: 1.8160896}
   m_EdgeRadius: 0
 --- !u!1 &741829376
 GameObject:
@@ -10714,7 +11001,9 @@ GameObject:
   - component: {fileID: 741829380}
   - component: {fileID: 741829379}
   - component: {fileID: 741829381}
-  m_Layer: 0
+  - component: {fileID: 741829382}
+  - component: {fileID: 741829383}
+  m_Layer: 8
   m_Name: Cuerpo_2_2
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -10828,7 +11117,7 @@ NavMeshAgent:
   m_Height: 0.8
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &741829381
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10866,6 +11155,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0000009536743, y: 0.0000038146973}
   m_Size: {x: 0.8000002, y: 1.2200003}
   m_Direction: 0
+--- !u!114 &741829382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741829376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &741829383
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741829376}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &773222459
 GameObject:
   m_ObjectHideFlags: 0
@@ -10877,7 +11205,7 @@ GameObject:
   - component: {fileID: 773222460}
   m_Layer: 0
   m_Name: Agujeros
-  m_TagString: Agujero
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10913,7 +11241,9 @@ GameObject:
   - component: {fileID: 820048788}
   - component: {fileID: 820048787}
   - component: {fileID: 820048789}
-  m_Layer: 0
+  - component: {fileID: 820048790}
+  - component: {fileID: 820048791}
+  m_Layer: 8
   m_Name: Cuerpo_3_3
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -11027,7 +11357,7 @@ NavMeshAgent:
   m_Height: 0.64
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &820048789
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -11065,6 +11395,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.0000038146973}
   m_Size: {x: 0.64000016, y: 1.0200002}
   m_Direction: 0
+--- !u!114 &820048790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820048784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &820048791
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820048784}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &834950638
 GameObject:
   m_ObjectHideFlags: 0
@@ -11079,7 +11448,9 @@ GameObject:
   - component: {fileID: 834950641}
   - component: {fileID: 834950643}
   - component: {fileID: 834950644}
-  m_Layer: 0
+  - component: {fileID: 834950645}
+  - component: {fileID: 834950646}
+  m_Layer: 8
   m_Name: Cuerpo_1_3
   m_TagString: CuerpoGusanoGema
   m_Icon: {fileID: 0}
@@ -11193,7 +11564,7 @@ NavMeshAgent:
   m_Height: 1.1
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &834950643
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -11250,6 +11621,45 @@ MonoBehaviour:
   vector_lobos: {fileID: 0}
   indice_lobo: 0
   script_lobos: []
+--- !u!114 &834950645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834950638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &834950646
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834950638}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &849772218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6100668413497815938, guid: b3c5831623100229584720d0361dd512, type: 3}
@@ -11436,7 +11846,9 @@ GameObject:
   - component: {fileID: 1045406587}
   - component: {fileID: 1045406586}
   - component: {fileID: 1045406588}
-  m_Layer: 0
+  - component: {fileID: 1045406589}
+  - component: {fileID: 1045406590}
+  m_Layer: 8
   m_Name: Cuerpo_3_5
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -11550,7 +11962,7 @@ NavMeshAgent:
   m_Height: 0.64
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &1045406588
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -11588,6 +12000,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.0000038146973}
   m_Size: {x: 0.64000016, y: 1.0200002}
   m_Direction: 0
+--- !u!114 &1045406589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045406583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1045406590
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045406583}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1239209938
 GameObject:
   m_ObjectHideFlags: 0
@@ -15104,7 +15555,9 @@ GameObject:
   - component: {fileID: 1509121668}
   - component: {fileID: 1509121667}
   - component: {fileID: 1509121669}
-  m_Layer: 0
+  - component: {fileID: 1509121670}
+  - component: {fileID: 1509121671}
+  m_Layer: 8
   m_Name: Cuerpo_3_1
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -15218,7 +15671,7 @@ NavMeshAgent:
   m_Height: 0.64
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &1509121669
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -15256,6 +15709,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0000009536743, y: 0.0000038146973}
   m_Size: {x: 0.64000016, y: 1.0200002}
   m_Direction: 0
+--- !u!114 &1509121670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509121664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1509121671
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509121664}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1632516641
 GameObject:
   m_ObjectHideFlags: 0
@@ -15270,7 +15762,9 @@ GameObject:
   - component: {fileID: 1632516644}
   - component: {fileID: 1632516646}
   - component: {fileID: 1632516647}
-  m_Layer: 0
+  - component: {fileID: 1632516648}
+  - component: {fileID: 1632516649}
+  m_Layer: 8
   m_Name: Cuerpo_1_4
   m_TagString: CuerpoGusanoGema
   m_Icon: {fileID: 0}
@@ -15384,7 +15878,7 @@ NavMeshAgent:
   m_Height: 1.1
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &1632516646
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -15441,6 +15935,45 @@ MonoBehaviour:
   vector_lobos: {fileID: 0}
   indice_lobo: 0
   script_lobos: []
+--- !u!114 &1632516648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632516641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1632516649
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632516641}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1692716598
 GameObject:
   m_ObjectHideFlags: 0
@@ -15452,6 +15985,7 @@ GameObject:
   - component: {fileID: 1692716600}
   - component: {fileID: 1692716599}
   - component: {fileID: 1692716601}
+  - component: {fileID: 1692716602}
   m_Layer: 0
   m_Name: AlertaGusano
   m_TagString: Alerta
@@ -15532,10 +16066,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a4f1b6ef55bc581cafcb14fd342321c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camara: {fileID: 1347772077}
   agent: {fileID: 1707025047}
-  pared_inv: {fileID: 145447882}
   agentTransform: {fileID: 1707025044}
+--- !u!114 &1692716602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692716598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdafee537051f0646a3880dc4f737281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camara: {fileID: 1347772077}
+  ParedInvisible: {fileID: 39221262}
 --- !u!1 &1707025043
 GameObject:
   m_ObjectHideFlags: 0
@@ -15550,7 +16096,9 @@ GameObject:
   - component: {fileID: 1707025047}
   - component: {fileID: 1707025049}
   - component: {fileID: 1707025050}
-  m_Layer: 0
+  - component: {fileID: 1707025051}
+  - component: {fileID: 1707025052}
+  m_Layer: 8
   m_Name: Cabeza
   m_TagString: Cabeza
   m_Icon: {fileID: 0}
@@ -15799,12 +16347,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 2079898921}
-  objetivosAlternativos:
-  - {fileID: 676702439}
-  - {fileID: 511571047}
-  - {fileID: 187398028}
-  duracionAtaque: 7
-  agente: {fileID: 1707025047}
+  gusano: {fileID: 170103968}
+--- !u!114 &1707025051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707025043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1707025052
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707025043}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1715771613 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6902008401554066323, guid: b3c5831623100229584720d0361dd512, type: 3}
@@ -15839,7 +16421,9 @@ GameObject:
   - component: {fileID: 1724437326}
   - component: {fileID: 1724437325}
   - component: {fileID: 1724437327}
-  m_Layer: 0
+  - component: {fileID: 1724437328}
+  - component: {fileID: 1724437329}
+  m_Layer: 8
   m_Name: Cuerpo_1_1
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -15953,7 +16537,7 @@ NavMeshAgent:
   m_Height: 1.1
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &1724437327
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -15991,6 +16575,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0000009536743, y: 0}
   m_Size: {x: 0.94000024, y: 1.3800004}
   m_Direction: 0
+--- !u!114 &1724437328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724437322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1724437329
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724437322}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1826753514
 GameObject:
   m_ObjectHideFlags: 0
@@ -16141,7 +16764,9 @@ GameObject:
   - component: {fileID: 1869821788}
   - component: {fileID: 1869821787}
   - component: {fileID: 1869821789}
-  m_Layer: 0
+  - component: {fileID: 1869821790}
+  - component: {fileID: 1869821791}
+  m_Layer: 8
   m_Name: Cuerpo_2_1
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -16255,7 +16880,7 @@ NavMeshAgent:
   m_Height: 0.8
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &1869821789
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -16293,6 +16918,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0000009536743, y: 0.0000038146973}
   m_Size: {x: 0.8000002, y: 1.2200003}
   m_Direction: 0
+--- !u!114 &1869821790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869821784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1869821791
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869821784}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1926517199
 GameObject:
   m_ObjectHideFlags: 0
@@ -16307,7 +16971,9 @@ GameObject:
   - component: {fileID: 1926517202}
   - component: {fileID: 1926517204}
   - component: {fileID: 1926517205}
-  m_Layer: 0
+  - component: {fileID: 1926517206}
+  - component: {fileID: 1926517207}
+  m_Layer: 8
   m_Name: Cuerpo_1_7
   m_TagString: CuerpoGusanoGema
   m_Icon: {fileID: 0}
@@ -16421,7 +17087,7 @@ NavMeshAgent:
   m_Height: 0.94
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &1926517204
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -16478,6 +17144,45 @@ MonoBehaviour:
   vector_lobos: {fileID: 0}
   indice_lobo: 0
   script_lobos: []
+--- !u!114 &1926517206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926517199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1926517207
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926517199}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1950365402
 GameObject:
   m_ObjectHideFlags: 0
@@ -16566,7 +17271,9 @@ GameObject:
   - component: {fileID: 1992782468}
   - component: {fileID: 1992782467}
   - component: {fileID: 1992782469}
-  m_Layer: 0
+  - component: {fileID: 1992782470}
+  - component: {fileID: 1992782471}
+  m_Layer: 8
   m_Name: Cola
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -16680,7 +17387,7 @@ NavMeshAgent:
   m_Height: 1.44
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!60 &1992782469
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16768,6 +17475,45 @@ PolygonCollider2D:
       - {x: 0.53, y: -0.76}
       - {x: 0.69, y: -0.59999996}
   m_UseDelaunayMesh: 0
+--- !u!114 &1992782470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992782464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1992782471
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992782464}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &2030402211
 GameObject:
   m_ObjectHideFlags: 0
@@ -17017,7 +17763,9 @@ GameObject:
   - component: {fileID: 2031454226}
   - component: {fileID: 2031454225}
   - component: {fileID: 2031454227}
-  m_Layer: 0
+  - component: {fileID: 2031454228}
+  - component: {fileID: 2031454229}
+  m_Layer: 8
   m_Name: Cuerpo_1_2
   m_TagString: CuerpoGusano
   m_Icon: {fileID: 0}
@@ -17131,7 +17879,7 @@ NavMeshAgent:
   m_Height: 1.1
   m_BaseOffset: 0
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &2031454227
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -17169,6 +17917,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.94000024, y: 1.3800004}
   m_Direction: 0
+--- !u!114 &2031454228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031454222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81ab2577d5a7f788a18c68bbd51a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &2031454229
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031454222}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!61 &2079898918 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 7717462302817651209, guid: b3c5831623100229584720d0361dd512, type: 3}
@@ -17194,7 +17981,7 @@ SceneRoots:
   - {fileID: 161921993}
   - {fileID: 283480758}
   - {fileID: 119562358}
+  - {fileID: 39221263}
   - {fileID: 1826753517}
   - {fileID: 1301683173}
-  - {fileID: 145447883}
   - {fileID: 773222460}

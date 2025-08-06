@@ -3,10 +3,7 @@ using UnityEngine.AI;
 
 public class MovimientoCabeza : MonoBehaviour
 {
-
-    public Camera camara;
     public NavMeshAgent agent;
-    public Collider2D pared_inv;
     
     public Transform agentTransform;
     
@@ -14,10 +11,11 @@ public class MovimientoCabeza : MonoBehaviour
 
     void Start()
     {
-        pared_inv.enabled = false;
         agent.enabled = false;
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        
+        agent.obstacleAvoidanceType = ObstacleAvoidanceType.HighQualityObstacleAvoidance;
     }
 
     void FixedUpdate()
@@ -37,11 +35,6 @@ public class MovimientoCabeza : MonoBehaviour
 
         
     }
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        pared_inv.enabled = true;
-        camara.farClipPlane = 2000;
-    }
     
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -52,14 +45,5 @@ public class MovimientoCabeza : MonoBehaviour
         }
         
     }
-
-    void OnTriggerExit2D(Collider2D collision)
-    {
-       
-        if (collision.gameObject.tag == "Player")
-        {
-            agent.enabled = false;
-            agent.Warp(new Vector3(40, 28, 0));
-        }
-    }
+    
 }
